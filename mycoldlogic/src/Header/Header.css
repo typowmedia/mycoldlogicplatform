@@ -3,12 +3,13 @@
   align-items: center;
   background: #0D3C55;
   color: #FFFFFF;
-  height: 50px;
+  height: 10vh;
 }
 .Header h2{
   margin-left: 20px;
 }
 .Header img{
   margin-left: auto;
-  height: 50px;
+  padding-right: 20px;
+  height: 100%;
 }

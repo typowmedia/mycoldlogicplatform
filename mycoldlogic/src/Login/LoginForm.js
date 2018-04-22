@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './LoginForm.css';
-import Logo from '../Assets/ColdLogic.jpg'
+import Logo from '../Assets/coldlogic_logo.svg';
 
 class LoginForm extends Component {
   render(){
