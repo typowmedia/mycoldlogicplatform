@@ -1,1 +1,31 @@
-
+.App button:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0D3C55;
+  transform: scaleX(0);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+.App button{
+  transform: translateZ(0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: #F16C20;
+  color: #ffffff;
+  overflow: hidden;
+}
+.App button:hover{
+  cursor: pointer;
+}
+.App button:hover:before{
+  transform: scaleX(1);
+}

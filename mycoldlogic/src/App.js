@@ -5,7 +5,9 @@ import './App.css';
 
 import Dashboard from './Dashboard/Dashboard';
 import Login from './Login/Login';
+import LoginForm from './Login/LoginForm';
 import Header from './Header/Header';
+import RequestPassword from './RequestPassword/RequestPassword';
 
 
 class App extends Component {
@@ -29,9 +31,11 @@ class App extends Component {
   render() {
     return (
         <div className="App">
-          <Header message='Welcome to My ColdLogic'/>
+          <Header
+            isLoggedOn={this.state.isLoggedOn}
+            message='Welcome to My ColdLogic'/>
           <Login isLoggedOn={this.state.isLoggedOn}>
-            <Dashboard />
+            <RequestPassword />
           </Login>
         </div>
     );
