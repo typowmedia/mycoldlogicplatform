@@ -1,3 +1,14 @@
+.App{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.App .Content-Section{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .App button:before{
   content: "";
   position: absolute;
@@ -28,4 +39,15 @@
 }
 .App button:hover:before{
   transform: scaleX(1);
+}
+.flex-container{
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
