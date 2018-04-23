@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Link, Route, Redirect} from 'react-router-dom';
 
 import './App.css';
 
@@ -16,27 +15,25 @@ class App extends Component {
 
     this.state = {
       isLoggedOn: true,
-      appLinks: {
-        dashboard: '/',
-        login: '/login',
-        timeoff: '/timeoff',
-        mySchedule: '/my-schedule',
-        myRecog: '/my-recognitions'
-      }
     };
   }
   login = () => {
     this.setState(prevState => ({isLoggedOn: !prevState.isLoggedOn}));
   }
+  //============================================================================
+  //  PLACE THE COMPONENT YOU WOULD LIKE TO WORK ON INSIDE THE LOGIN COMPONENT
+  //============================================================================
   render() {
     return (
         <div className="App">
-          <Header
-            isLoggedOn={this.state.isLoggedOn}
-            message='Welcome to My ColdLogic'/>
-          <Login isLoggedOn={this.state.isLoggedOn}>
-            <RequestPassword />
-          </Login>
+            <Header
+              isLoggedOn={this.state.isLoggedOn}
+              message='Welcome to My ColdLogic'/>
+          <div className="Content-Section">
+            <Login isLoggedOn={this.state.isLoggedOn}>
+              <RequestPassword />
+            </Login>
+          </div>
         </div>
     );
   }
