@@ -4,13 +4,16 @@ import LoginForm from './LoginForm';
 class Login extends Component {
   constructor(props) {
     super(props);
+
+    this.state={
+      RequestPassword: false
+    }
   }
   render(){
-    if(!this.props.isLoggedOn){
-      return <LoginForm />;
-    } else {
-      return this.props.children
-    }
+    let login = <LoginForm />;
+    return(
+      {login}
+    )
   }
 }
 
