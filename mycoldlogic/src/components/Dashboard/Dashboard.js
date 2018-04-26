@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Aux from '../../hoc/Aux';
+import Auxiliary from '../../hoc/Auxiliary';
 import Announcements from './Announcements/Announcements';
 import Nav from './Nav/Nav';
 
@@ -13,7 +13,7 @@ class Dashboard extends Component {
   }
   render(){
     return(
-      <Aux>
+      <Auxiliary>
         <Announcements>
           <div><h3>Important Announcement 1</h3></div>
           <div>
@@ -25,7 +25,7 @@ class Dashboard extends Component {
           </div>
         </Announcements>
         <Nav navLinks={this.props.navLinks}/>
-      </Aux>
+      </Auxiliary>
     );
   }
 }
