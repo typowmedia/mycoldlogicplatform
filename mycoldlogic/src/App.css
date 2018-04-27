@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
 }
-.App button:before{
+.App .mainBtn:before{
   content: "";
   position: absolute;
   z-index: -1;
@@ -22,7 +22,7 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
 }
-.App button{
+.App .mainBtn{
   transform: translateZ(0);
   position: relative;
   transition-property: color;
@@ -34,10 +34,10 @@
   color: #ffffff;
   overflow: hidden;
 }
-.App button:hover{
+.App .mainBtn:hover{
   cursor: pointer;
 }
-.App button:hover:before{
+.App .mainBtn:hover:before{
   transform: scaleX(1);
 }
 .flex-container{

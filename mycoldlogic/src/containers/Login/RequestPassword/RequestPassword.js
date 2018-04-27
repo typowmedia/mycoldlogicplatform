@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Image from '../Assets/request_a_password_icon.svg';
+import Image from '../../../Assets/request_a_password_icon.svg';
 import './RequestPassword.css';
 
 class RequestPassword extends Component {
@@ -31,7 +31,7 @@ class RequestPassword extends Component {
       <div className='RequestPassword'>
         <div className='RequestPasswordTitle'>
           <img src={Image} alt="Request Password"></img>
-          <h3><span style={{textDecoration: 'underline'}}>Request a Passwo</span>rd</h3>
+          <h3>Request a Password</h3>
         </div>
         {requestTimeOff}
       </div>
