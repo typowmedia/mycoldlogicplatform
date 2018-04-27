@@ -1,0 +1,34 @@
+.Announcement{
+  position: relative;
+  height: 65%;
+  width: 45%;
+  background: #0E4D69;
+  color: #EEEEEE;
+}
+.Announcement-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  margin-right: 5px;
+  color:#1395BA;
+}
+.Announcement-padding-margin{
+  padding: 5px;
+  margin-left: 5px;
+}
+.Announcement-btn:hover{
+  cursor: pointer;
+}
+.Announcement-message{
+  font-size: 14px;
+}
+.Announcement-event{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.Announcement-event-date{
+  font-size: 120%;
+  font-weight: bold;
+}

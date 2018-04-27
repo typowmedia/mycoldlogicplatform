@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Auxiliary from '../../hoc/Auxiliary';
+import './Dashboard.css';
 import Announcements from './Announcements/Announcements';
 import Nav from './Nav/Nav';
+import AskManagerForm from './AskManagerForm/AskManagerForm';
 
 class Dashboard extends Component {
   constructor(props) {
@@ -13,19 +14,13 @@ class Dashboard extends Component {
   }
   render(){
     return(
-      <Auxiliary>
-        <Announcements>
-          <div><h3>Important Announcement 1</h3></div>
-          <div>
-            <h3>Upcoming Events</h3>
-            <div>
-              <span>DEC 01</span>
-              <span>Christmas BBQ Grab your hotdog!</span>
-            </div>
-          </div>
-        </Announcements>
-        <Nav navLinks={this.props.navLinks}/>
-      </Auxiliary>
+      <div>
+        <Announcements />
+        <div className='Dashboard-flex-container'>
+          <Nav navLinks={this.props.navLinks}/>
+          <AskManagerForm />
+        </div>
+      </div>
     );
   }
 }

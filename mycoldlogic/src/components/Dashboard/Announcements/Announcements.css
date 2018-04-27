@@ -1,0 +1,7 @@
+.Announcements{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #1395BA;
+  height: 20vh;
+}
