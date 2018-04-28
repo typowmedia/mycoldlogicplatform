@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import Logo from '../../Assets/coldlogic_logo.svg';
+import Logo from '../../assets/coldlogic_logo.svg';
 import UserMenu from './UserMenu/UserMenu';
 
 const Header = props => {

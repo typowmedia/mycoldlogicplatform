@@ -16,7 +16,7 @@ class AskManangerForm extends Component {
           <div>Subject:<input type='text' placeholder='Write your subject here'/></div>
           <label for='ask-manager-message'>Message:</label>
           <textarea rows='4' id='ask-manager-message'></textarea>
-          <button type='submit'>Submit</button>
+          <button className='mainBtn' type='submit'>Submit</button>
         </form>
       </div>
     );
