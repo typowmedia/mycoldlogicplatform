@@ -1,6 +1,6 @@
 .AskManagerForm{
   height: 60%;
-  padding: 16px;
+    padding: 16px 50px 16px 16px;
 }
 .AskManagerForm h3{
   text-align: center;
@@ -17,7 +17,7 @@
   width: 100%;
   margin: 10px auto;
   background: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #0D3C55;
 }
 .AskManagerForm input{
   padding: 3px;
@@ -28,4 +28,5 @@
 .AskManagerForm textarea{
   width: 100%;
   margin: 10px auto;
+  border-radius: 15px;
 }
