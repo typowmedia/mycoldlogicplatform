@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './LoginForm.css';
-import Logo from '../../../Assets/coldlogic_logo.svg';
+import Logo from '../../../assets/coldlogic_logo.svg';
 
 class LoginForm extends Component {
   render(){
@@ -12,8 +12,8 @@ class LoginForm extends Component {
           <input type='password' placeholder='Input your unique password' ></input>
         </form>
         <div>
-          <button onClick={this.props.togglePasswordRequest}>Request a password</button>
-          <button onClick={this.props.authenticateUser}>Login</button>
+          <button className='mainBtn' onClick={this.props.togglePasswordRequest}>Request a password</button>
+          <button className='mainBtn' onClick={this.props.authenticateUser}>Login</button>
         </div>
       </div>
     );
