@@ -13,15 +13,13 @@ class Dashboard extends Component {
     };
   }
   render(){
-    return(
-      <div>
-        <Announcements />
-        <div className='Dashboard-flex-container'>
-          <Nav navLinks={this.props.navLinks}/>
-          <AskManagerForm />
-        </div>
-      </div>
-    );
+      return <div>
+          <Announcements/>
+          <div className={'Dashboard-flex-container'}>
+              <Nav navLinks={this.props.navLinks}/>
+              <AskManagerForm/>
+          </div>
+      </div>;
   }
 }
 
