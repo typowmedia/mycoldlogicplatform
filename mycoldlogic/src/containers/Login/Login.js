@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LoginForm from './LoginForm/LoginForm';
 import RequestPassword from './RequestPassword/RequestPassword';
+import Header from '../../components/Header/Header';
 
 class Login extends Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class Login extends Component {
     }
     return(
       <div>
+        <Header />
         {login}
       </div>
     );

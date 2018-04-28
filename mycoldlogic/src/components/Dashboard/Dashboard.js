@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Dashboard.css';
-import Announcements from './Announcements/Announcements';
-import Nav from './Nav/Nav';
+import Announcements from '../Announcements/Announcements';
+import Nav from '../Nav/Nav';
 import AskManagerForm from './AskManagerForm/AskManagerForm';
 
 class Dashboard extends Component {

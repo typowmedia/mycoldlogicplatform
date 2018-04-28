@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Image from '../../../Assets/request_a_password_icon.svg';
+import Image from '../../../assets/request_a_password_icon.svg';
 import './RequestPassword.css';
 
 class RequestPassword extends Component {
