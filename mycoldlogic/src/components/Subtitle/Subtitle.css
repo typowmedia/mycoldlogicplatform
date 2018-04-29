@@ -1,0 +1,13 @@
+.Subtitle{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.Subtitle h3{
+  margin-left: 100px;
+  font-size: 220%;
+  border-bottom: 1px solid #95989A;
+  padding-bottom: 3px;
+}

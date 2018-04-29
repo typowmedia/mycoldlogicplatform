@@ -5,6 +5,7 @@ import OpenPositionIcon from '../../assets/open_positions_icon.svg';
 import SafeSiteIcon from '../../assets/safe_site_report_icon.svg';
 import BonusRecognitionsIcon from '../../assets/bonus_recognitions_icon.svg';
 import ScheduleIcon from '../../assets/schedule_icon.svg';
+import RequestPasswordIcon from '../../assets/request_a_password_icon.svg';
 
 
 const Icon = ( props ) => {
@@ -28,6 +29,9 @@ const Icon = ( props ) => {
       break;
     case 'open-positions':
       icon = OpenPositionIcon;
+      break;
+    case 'request-password':
+      icon = RequestPasswordIcon;
       break;
     default: icon = null;
 
