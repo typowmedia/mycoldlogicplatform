@@ -5,7 +5,7 @@ import './Subtitle.css';
 const Subtitle = ( props ) => {
   return (
     <div className='Subtitle'>
-      <Icon height='70px' icon={props.icon}/>
+      <Icon height={props.height} icon={props.icon}/>
       <h3>{props.title}</h3>
     </div>
   );

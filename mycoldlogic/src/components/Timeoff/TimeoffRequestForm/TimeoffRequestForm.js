@@ -5,13 +5,13 @@ const TimeoffRequestForm = ( props ) => {
   return (
     <form className='TimeoffRequestForm'>
       <div>
-        <label for='fromDate'>From</label>
+        <label htmlFor='fromDate'>From</label>
         <input type='date' name='fromDate' />
-        <label for='toDate'>To</label>
+        <label htmlFor='toDate'>To</label>
         <input type='date' name='toDate' />
       </div>
       <div>
-        <label for='reason'>Reason</label>
+        <label htmlFor='reason'>Reason</label>
         <select name='reason'>
           <option>Vacation</option>
           <option>Unpaid Vacation</option>
@@ -20,10 +20,10 @@ const TimeoffRequestForm = ( props ) => {
         </select>
       </div>
       <div>
-        <label for='reasonDetail'>Please give more detail below</label>
-        <textarea rows='4' name='reasonDetail'></textarea>
+        <label htmlFor='reasonDetail'>Please give more detail below</label>
+        <textarea rows='4' name='reasonDetail' onChange={props.updateReason}>{props.reasonDetail}</textarea>
       </div>
-      <button>Submit Time off</button>
+      <button onClick={props.submitTimeoffRequest}>Submit Time off</button>
     </form>
   );
 };
