@@ -5,6 +5,7 @@ import {
   Redirect} from 'react-router-dom';
 import Dashboard from '../../components/Dashboard/Dashboard';
 import Header from '../../components/Header/Header';
+import Timeoff from '../../components/Timeoff/Timeoff';
 
 class Main extends Component {
   render(){
@@ -16,6 +17,7 @@ class Main extends Component {
         <Router>
           <div>
             <Route exact path='/' render={() => <Dashboard {...this.props}/>} />
+            <Route path='/timeoff' render={() => <Timeoff {...this.props}/>} />
           </div>
         </Router>
       </div>
