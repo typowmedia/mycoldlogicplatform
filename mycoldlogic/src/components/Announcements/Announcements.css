@@ -5,3 +5,9 @@
   background: #1395BA;
   height: 20vh;
 }
+
+@media only screen and (max-device-width: 600px) {
+  .Announcements {
+    display: none;
+  }
+}
