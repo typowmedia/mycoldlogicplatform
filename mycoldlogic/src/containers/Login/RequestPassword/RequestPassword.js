@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Image from '../../../assets/request_a_password_icon.svg';
+import Subtitle from '../../../components/Subtitle/Subtitle';
 import './RequestPassword.css';
 
 class RequestPassword extends Component {
@@ -7,7 +7,7 @@ class RequestPassword extends Component {
     super(props);
 
     this.state = {
-      requestSent: false
+      requestSent: true
     };
   }
 
@@ -29,10 +29,7 @@ class RequestPassword extends Component {
     }
     return(
       <div className='RequestPassword'>
-        <div className='RequestPasswordTitle'>
-          <img src={Image} alt="Request Password"></img>
-          <h3>Request a Password</h3>
-        </div>
+        <Subtitle height='70px' icon='request-password' title='Request a Password' />
         {requestTimeOff}
       </div>
     );
