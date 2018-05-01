@@ -1,0 +1,10 @@
+.RequestSuccess{
+  width: 80%;
+  text-align: center;
+}
+.RequestSuccess p{
+  margin-top: 40px;
+}
+.RequestSuccess div{
+  margin-top: 50px;
+}

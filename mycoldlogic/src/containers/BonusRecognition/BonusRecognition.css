@@ -1,0 +1,14 @@
+.BonusRecognition{
+  text-align: center;
+}
+.BonusRecognition table{
+  width: 85%;
+  margin: 20px auto;
+}
+.BonusRecognition table th, td{
+  font-weight: normal;
+  padding: 5px;
+}
+.BonusRecognition table th{
+  color: #0D3C55;
+}
