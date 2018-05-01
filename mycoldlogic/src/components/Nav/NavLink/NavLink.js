@@ -5,7 +5,6 @@ import Icon from '../../Icon/Icon';
 
 
 const NavLink = ( props ) => {
-  const route = props.route;
   return (
       <div>
         <Link to={props.route} className='NavLink'><Icon icon={props.route} height='50%'/></Link>

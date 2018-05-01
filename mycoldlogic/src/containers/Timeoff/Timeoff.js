@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TimeoffRequestForm from './TimeoffRequestForm/TimeoffRequestForm';
-import { Link } from 'react-router-dom';
-import Subtitle from '../Subtitle/Subtitle';
+import RequestSuccess from '../../components/RequestSuccess/RequestSuccess';
+import Subtitle from '../../components/Subtitle/Subtitle';
 import './Timeoff.css';
 
 class Timeoff extends Component {
@@ -30,15 +30,10 @@ class Timeoff extends Component {
        />);
     if(this.state.requestSubmitted){
       timeoff = (
-        <div>
-          <p>
-            Thank you for submitting your time off request through your ColdLogic portal. One of your managers will review the request and get back to you soon with an answer.
-          </p>
-          <div>
-            <button onClick={this.submitTimeoffRequest}>Submit another request</button>
-            <Link className='mainBtn' to='/'>Back to Dashboard</Link>
-          </div>
-        </div>
+        <RequestSuccess
+          successMessage='Thank you for submitting your time off request through your ColdLogic portal. One of your managers will review the request and get back to you soon with an answer.'
+          clicked={this.submitTimeoffRequest}
+          />
       )
     }
     return(
