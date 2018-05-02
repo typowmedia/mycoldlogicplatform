@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3e111c6d-3269-4cc9-ae2b-8ba5e78f7d79" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/containers/Login/RequestPassword/RequestPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/containers/Login/RequestPassword/RequestPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/public/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,13 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RequestPassword.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Login/RequestPassword/RequestPassword.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state>
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,7 +44,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mycoldlogic/.gitignore" />
-        <option value="$PROJECT_DIR$/mycoldlogic/public/index.html" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/components/Dashboard/Dashboard.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/components/Dashboard/AskManagerForm/AskManagerForm.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/components/Header/Header.js" />
@@ -58,6 +55,7 @@
         <option value="$PROJECT_DIR$/mycoldlogic/src/components/Dashboard/Dashboard.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/App.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Login/RequestPassword/RequestPassword.js" />
+        <option value="$PROJECT_DIR$/mycoldlogic/public/index.html" />
       </list>
     </option>
   </component>
@@ -263,16 +261,15 @@
       <workItem from="1524721832308" duration="553000" />
       <workItem from="1524890885012" duration="5222000" />
       <workItem from="1524948311746" duration="82000" />
-      <workItem from="1525040505454" duration="8379000" />
+      <workItem from="1525040505454" duration="9102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15735000" />
+    <option name="totallyTimeSpent" value="16458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3833" y="-7" width="854" height="1318" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29498163" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -343,13 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
           <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -473,16 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/RequestSuccess/RequestSuccess.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -511,10 +491,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Login/RequestPassword/RequestPassword.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="294">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
