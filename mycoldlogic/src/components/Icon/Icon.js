@@ -12,19 +12,19 @@ const Icon = ( props ) => {
   const height = props.height;
   let icon = null;
   switch (props.icon) {
-    case '/timeoff':
+    case 'timeoff':
       icon = TimeOffIcon;
       break;
-    case '/bonus-recognitions':
+    case 'bonus-recognitions':
       icon = BonusRecognitionsIcon;
       break;
-    case '/my-schedule':
+    case 'my-schedule':
       icon = ScheduleIcon;
       break;
-    case '/my-best-site-report':
+    case 'my-best-site-report':
       icon = BestSiteIcon;
       break;
-    case '/safe-site-report':
+    case 'safe-site-report':
       icon = SafeSiteIcon;
       break;
     case 'open-positions':

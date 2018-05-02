@@ -6,6 +6,7 @@ import Dashboard from '../Dashboard/Dashboard';
 import Header from '../../components/Header/Header';
 import Timeoff from '../Timeoff/Timeoff';
 import BonusRecognition from '../BonusRecognition/BonusRecognition';
+import OpenPosition from '../OpenPosition/OpenPosition';
 
 class Main extends Component {
   render(){
@@ -19,6 +20,7 @@ class Main extends Component {
             <Route exact path='/' render={() => <Dashboard {...this.props}/>} />
             <Route path='/timeoff' render={() => <Timeoff {...this.props}/>} />
             <Route path='/bonus-recognitions' render={() => <BonusRecognition {...this.props}/>} />
+            <Route path='/open-positions' render={() => <OpenPosition {...this.props}/>} />
           </div>
         </Router>
       </div>
