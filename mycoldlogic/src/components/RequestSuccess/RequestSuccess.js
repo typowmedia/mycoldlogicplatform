@@ -1,6 +1,6 @@
 import React from 'react';
 import './RequestSuccess.css';
-import { Link } from 'react-router-dom';
+import BackToDashboard from '../BackToDashboard/BackToDashboard'
 
 const RequestSuccess = ( props ) => {
   return (
@@ -10,7 +10,7 @@ const RequestSuccess = ( props ) => {
       </p>
       <div>
         <button onClick={props.clicked}>Submit another request</button>
-        <Link to='/'><button className='mainBtn'>Back to Dashboard</button></Link>
+        <BackToDashboard />
       </div>
     </div>
   );

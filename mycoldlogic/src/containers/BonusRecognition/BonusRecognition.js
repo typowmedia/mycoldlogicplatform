@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './BonusRecognition.css';
 import { Link } from 'react-router-dom';
 import Subtitle from '../../components/Subtitle/Subtitle';
+import BackToDashboard from '../../components/BackToDashboard/BackToDashboard';
 
 class BonusRecognition extends Component {
   render(){
@@ -59,7 +60,7 @@ class BonusRecognition extends Component {
             </tr>
           </tbody>
         </table>
-        <Link to='/'><button className='mainBtn'>Back To Dashboard</button></Link>
+        <BackToDashboard />
       </div>
     );
   }
