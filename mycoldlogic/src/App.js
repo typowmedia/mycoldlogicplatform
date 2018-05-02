@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      isAuthenticated: true,
+      isAuthenticated: false,
       user: {
         name: 'Luis',
         manager: 'Dan Imbery',

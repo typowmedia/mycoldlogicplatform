@@ -7,7 +7,7 @@ class RequestPassword extends Component {
     super(props);
 
     this.state = {
-      requestSent: true
+      requestSent: false
     };
   }
 
@@ -17,7 +17,7 @@ class RequestPassword extends Component {
     let requestTimeOff =
     <form>
       <input type='text' placeholder='Input your card number'></input>
-      <button>Get My password</button>
+      <button className='mainBtn'>Get My password</button>
     </form>;
 
     if(this.state.requestSent){
