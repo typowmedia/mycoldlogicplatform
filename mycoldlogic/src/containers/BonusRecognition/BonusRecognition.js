@@ -9,7 +9,7 @@ class BonusRecognition extends Component {
     return(
       <div className='BonusRecognition'>
         <Subtitle
-          icon='/bonus-recognitions'
+          icon='bonus-recognitions'
           height='70px'
           title='Bonus Recognitions'
           />
