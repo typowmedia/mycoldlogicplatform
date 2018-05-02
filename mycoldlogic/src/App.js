@@ -9,13 +9,13 @@ class App extends Component {
     super(props);
 
     this.state = {
-      isAuthenticated: false,
+      isAuthenticated: true,
       user: {
         name: 'Luis',
         manager: 'Dan Imbery',
         accessLevel: 1
       },
-      navLinks: ['/timeoff', '/bonus-recognitions', '/my-schedule', '/my-best-site-report', '/safe-site-report', 'open-positions']
+      navLinks: ['timeoff', 'bonus-recognitions', 'my-schedule', 'my-best-site-report', 'safe-site-report', 'open-positions']
     };
   }
 
