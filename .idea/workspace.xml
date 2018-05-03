@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="3e111c6d-3269-4cc9-ae2b-8ba5e78f7d79" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycoldlogic/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/bonus_recognitions_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/bonus_recognitions_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/bug_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/bug_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/coldlogic_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/coldlogic_logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/dashboard_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/dashboard_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/exit_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/exit_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/my_best_site_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/my_best_site_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/open_positions_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/open_positions_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/request_a_password_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/request_a_password_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/safe_site_report_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/safe_site_report_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/schedule_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/schedule_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/time_off_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/time_off_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/containers/Dashboard/Dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/containers/Dashboard/Dashboard.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,16 +27,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="time_off_icon.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/time_off_icon.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="bug_icon.svg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/bug_icon.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -56,6 +66,18 @@
         <option value="$PROJECT_DIR$/mycoldlogic/src/App.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Login/RequestPassword/RequestPassword.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/public/index.html" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Dashboard/Dashboard.css" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/bonus_recognitions_icon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/coldlogic_logo.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/dashboard_icon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/exit_icon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/my_best_site_icon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/open_positions_icon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/request_a_password_icon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/safe_site_report_icon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/schedule_icon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/time_off_icon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/bug_icon.svg" />
       </list>
     </option>
   </component>
@@ -74,10 +96,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3831" />
-    <option name="y" value="-9" />
-    <option name="width" value="1068" />
-    <option name="height" value="1648" />
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="3873" />
+    <option name="height" value="1990" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -192,6 +214,14 @@
               <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mycoldlogicplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="Login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,6 +241,38 @@
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="Login" type="462c0819:PsiDirectoryNode" />
               <item name="RequestPassword" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mycoldlogicplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mycoldlogicplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="OpenPosition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mycoldlogicplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="SafeSite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mycoldlogicplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="Timeoff" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
@@ -262,16 +324,18 @@
       <workItem from="1524890885012" duration="5222000" />
       <workItem from="1524948311746" duration="82000" />
       <workItem from="1525040505454" duration="9102000" />
+      <workItem from="1525375603818" duration="2062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16458000" />
+    <option name="totallyTimeSpent" value="18520000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3833" y="-7" width="854" height="1318" extended-state="6" />
+    <frame x="-6" y="-6" width="1549" height="796" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29498163" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17040952" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32930514" />
@@ -285,9 +349,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +361,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -336,16 +409,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Dashboard/AskManagerForm/AskManagerForm.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Dashboard/AskManagerForm/AskManagerForm.css" />
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -353,26 +417,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Announcements/Announcement/Announcement.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Announcements/Announcements.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Announcements/Announcement/Announcement.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-7" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Announcements/Announcements.css">
@@ -393,34 +447,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Dashboard/AskManagerForm/AskManagerForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/exit_icon.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Nav/Nav.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Dashboard/AskManagerForm/AskManagerForm.js" />
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Nav/NavLink/NavLink.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/coldlogic_logo.svg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Nav/NavLink/NavLink.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -432,30 +468,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Dashboard/Dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Icon/Icon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Dashboard/Dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Dashboard/Dashboard.css" />
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Dashboard/Dashboard.js" />
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/RequestSuccess/RequestSuccess.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -464,13 +478,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/RequestSuccess/RequestSuccess.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Login/LoginForm/LoginForm.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -483,9 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -503,9 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -513,6 +515,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Dashboard/Dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Icon/Icon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -524,6 +543,42 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/tempwarehousephoto.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/coldlogic_logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/bonus_recognitions_icon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/dashboard_icon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/exit_icon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/my_best_site_icon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/open_positions_icon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/request_a_password_icon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/safe_site_report_icon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/schedule_icon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/time_off_icon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/bug_icon.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
