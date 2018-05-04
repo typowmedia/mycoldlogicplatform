@@ -1,5 +1,5 @@
 import React from 'react';
-import TimeOffIcon from '../../assets/time_off_icon.svg';
+import TimeOffIcon from '../../assets/TimeOffIcon';
 import BestSiteIcon from '../../assets/my_best_site_icon.svg';
 import OpenPositionIcon from '../../assets/open_positions_icon.svg';
 import SafeSiteIcon from '../../assets/safe_site_report_icon.svg';
