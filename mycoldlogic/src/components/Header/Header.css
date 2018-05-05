@@ -8,7 +8,7 @@
 .Header h2{
   margin-left: 20px;
 }
-.Header img{
+.Header #Logo {
   margin-left: auto;
   padding-right: 20px;
   height: 100%;

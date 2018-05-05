@@ -1,13 +1,13 @@
 import React from 'react';
 import './Header.css';
-import Logo from '../../assets/coldlogic_logo.svg';
 import UserMenu from './UserMenu/UserMenu';
+import ColdLogicLogo from "../../assets/ColdLogicLogo";
 
 const Header = props => {
   let coldLogic = <h2>Welcome to My ColdLogic</h2>;
   let user;
   if(props.isAuthenticated){
-    coldLogic = <img src={Logo} alt="Cold Logic"></img>;
+    coldLogic = <ColdLogicLogo color={'#fff'} className="header-logo"/>;
     user = (
     <div className="Header-user">
       Welcome {props.user.name}!
