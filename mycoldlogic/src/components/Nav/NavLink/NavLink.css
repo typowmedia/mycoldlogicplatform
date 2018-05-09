@@ -9,3 +9,18 @@
   background: #F16C20;
   color: #EEEEEE;
 }
+
+@media only screen and (max-width: 600px){
+    .NavLink {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        border: none;
+        background: #F16C20;
+        color: #EEEEEE;
+    }
+}

@@ -1,5 +1,19 @@
 .Dashboard-flex-container{
-  height: 70vh;
-  display: flex;
-  justify-content: flex-end;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+@media only screen and (max-width: 600px){
+    .Dashboard-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 599px) {
+    Announcements {
+        display: none;
+    }
 }
