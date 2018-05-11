@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ColdLogicLogo =( props ) => {
-  let color = props.color;
   return <svg id="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.56 29.98">
       <title>ColdLogic Logo</title>
       <polygon points="32.74 22.99 37.62 0 44.93 0 39.8 22.99 32.74 22.99" fill={props.color}/>
