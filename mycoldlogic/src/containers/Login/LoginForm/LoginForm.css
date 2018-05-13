@@ -1,11 +1,11 @@
 .LoginForm {
-  width: 50%;
+  width: 60%;
   margin: 40px auto;
   text-align: center;
   padding: 15px;
 }
-.LoginForm img{
-  width: 70%;
+.LoginForm #Logo{
+  width: 100%;
 }
 .LoginForm form{
   padding: 15px;
@@ -19,9 +19,57 @@
   border: none;
   border-bottom: 2px solid #0D3C55;
 }
+.LoginForm input:focus{
+    padding: 3px;
+    width: 60%;
+    margin: 20px auto;
+    border: none;
+    border-bottom: 2px solid #F16C20;
+}
 .LoginForm div{
   margin-top: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+/* smart watches (just in case) */
+@media screen and (min-device-width: 150px)and (max-width: 330px){
+    .LoginForm {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 15px;
+    }
+    .LoginForm #Logo{
+        width: 100%;
+    }
+    .LoginForm form{
+        padding: 1%;
+        display: flex;
+        flex-flow: column;
+    }
+    .LoginForm input{
+        padding: 3px;
+        width: 80%;
+        margin: 20px auto;
+        border: none;
+        border-bottom: 2px solid #0D3C55;
+    }
+    .LoginForm input:focus{
+        padding: 3px;
+        width: 80%;
+        margin: 20px auto;
+        border: none;
+        border-bottom: 2px solid #F16C20;
+    }
+    .LoginForm div{
+        margin-top: 3%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+/* phones less than 600px wide*/
+@media screen and (min-device-width: 330px)and (max-width: 600px){
+
 }
