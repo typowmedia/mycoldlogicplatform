@@ -5,9 +5,40 @@
   background: #1395BA;
   height: 20vh;
 }
+/* smart watches (just in case) */
+@media screen and (min-device-width: 150px)and (max-width: 330px) {
+    .Announcements {
+        display: none;
+    }
+}
+/* phones less than 600px wide*/
+@media screen and (min-device-width: 330px)and (max-width: 600px){
+    .Announcements {
+        display: none;
+    }
+}
+/* phones bigger than 600px & less than 768px wide*/
+@media screen and (min-device-width: 600px)and (max-width: 768px){
+    .Announcements {
+        display: none;
+    }
+}
 
-@media only screen and (max-device-width: 600px) {
-  .Announcements {
-    display: none;
-  }
+/* tablets less than 900px wide*/
+@media screen and (min-device-width: 768px)and (max-width: 900px){
+
+}
+
+/* tablets / Laptops more than 900px  and less than 1200px wide*/
+@media screen and (min-device-width: 900px)and (max-width: 1200px){
+
+}
+
+/* Laptops and Monitors more than 1200px  and less than 1800px wide*/
+@media screen and (min-device-width: 1200px)and (max-width: 1800px){
+
+}
+/* Huge HD Monitors more than 1800px wide*/
+@media screen and (min-device-width: 1800px) {
+
 }
