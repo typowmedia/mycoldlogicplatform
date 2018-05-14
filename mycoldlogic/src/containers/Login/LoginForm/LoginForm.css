@@ -79,7 +79,22 @@
 }
 /* phones less than 600px wide*/
 @media screen and (min-device-width: 320px)and (max-width: 600px){
-
+    .login {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+    /* TODO Center the entire LoginForm in the middle of the screen */
+    .LoginForm {
+        display: flex;
+        justify-content: space-around;
+        align-content: stretch;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 15px;
+    }
 }
 /* phones bigger than 600px & less than 768px wide*/
 @media screen and (min-device-width: 600px)and (max-width: 768px){

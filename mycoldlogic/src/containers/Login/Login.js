@@ -37,7 +37,7 @@ class Login extends Component {
       login = <RequestPassword />
     }
     return(
-      <div>
+      <div className="login">
         <Header />
         {login}
       </div>
