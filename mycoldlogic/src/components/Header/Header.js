@@ -10,9 +10,8 @@ const Header = props => {
     coldLogic = <ColdLogicLogo color={'#fff'} className="header-logo"/>;
     user = (
     <div className="Header-user">
+      <UserMenu {...props}/>
       Welcome {props.user.name}!
-      <button onClick={props.toggleUserMenu}>+</button>
-      {props.showMenu ? <UserMenu logout={props.logout}/> : null}
     </div>);
   }
   return(

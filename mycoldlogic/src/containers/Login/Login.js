@@ -19,12 +19,18 @@ class Login extends Component {
   authenticateUser = () => {
     // send API call out to authenticate user
     // send authenticated user data back to App Component via prop.
-
-    // axios.get(`https://clcresttest.azurewebsites.net/api/Login/Associates/`)
-    //   .then(res => {
-    //     console.log(res.data);
-    //   });
     
+    // axios.get('https://mycoldlogiccatest.azurewebsites.net/api/Login/Associates', {
+    //   headers: {
+    //   'Access-Control-Allow-Origin': '*',
+    // }})
+    // .then(res => {
+    //   console.log(res.data);
+    // })
+    // .catch(err => {
+    //   console.log(err);
+    // });
+
     this.props.logUserIn();
   }
   render(){

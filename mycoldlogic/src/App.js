@@ -16,8 +16,16 @@ class App extends Component {
   }
 
   loginUser = (user) => {
-    this.setState({isAuthenticated: true});
-  };
+    this.setState({
+      isAuthenticated: true,
+      user: {
+        name: 'Luis',
+        mananger: 'Dan Emberly',
+        accessLevel: 1
+      }
+    });
+  }
+
   render() {
     let app = (
       <Login
