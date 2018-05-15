@@ -62,9 +62,8 @@
 /* phones less than 600px wide*/
 @media screen and (min-device-width: 330px)and (max-width: 600px){
   .App{
-    display: flex;
-    align-content: center;
-    align-items: flex-start;
+      position: relative;
+      height: available;
   }
 }
 /* phones bigger than 600px & less than 768px wide*/

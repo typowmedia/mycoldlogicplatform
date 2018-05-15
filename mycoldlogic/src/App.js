@@ -9,15 +9,15 @@ class App extends Component {
     super(props);
 
     this.state = {
-      isAuthenticated: false,
-      user: null,
+      isAuthenticated: true,
+      user: 'Luis',
       navLinks: ['timeoff', 'bonus-recognitions', 'my-schedule', 'my-best-site-report', 'safe-site-report', 'open-positions']
     };
   }
 
   loginUser = (user) => {
     this.setState({isAuthenticated: true, user: user});
-  }
+  };
   render() {
     let app = (
       <Login

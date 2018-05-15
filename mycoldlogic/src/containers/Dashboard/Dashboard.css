@@ -6,13 +6,6 @@
     
 }
 
-@media only screen and (max-width: 600px){
-    .Dashboard-flex-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
 /* smart watches (just in case) */
 @media screen and (min-device-width: 150px)and (max-width: 330px) {
     Announcements {
@@ -23,6 +16,11 @@
 @media screen and (min-device-width: 330px)and (max-width: 600px){
     Announcements {
         display: none;
+    }
+    .Dashboard-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 /* phones bigger than 600px & less than 768px wide*/

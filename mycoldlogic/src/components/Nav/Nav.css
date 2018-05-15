@@ -9,11 +9,23 @@
 }
 /* smart watches (just in case) */
 @media screen and (min-device-width: 150px)and (max-width: 330px){
-
+  .Nav {
+    display: flex;
+    padding: 5%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 /* phones less than 600px wide*/
 @media screen and (min-device-width: 330px)and (max-width: 600px){
-
+.Nav {
+  display: flex;
+  padding: 5%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-around;
+}
 }
 /* phones bigger than 600px & less than 768px wide*/
 @media screen and (min-device-width: 600px)and (max-width: 768px){
