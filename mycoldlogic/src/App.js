@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Login from './containers/Login/Login';
 import Main from './containers/Main/Main';
+import axios from 'axios';
 
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      isAuthenticated: true,
+      isAuthenticated: false,
       user: 'Luis',
       navLinks: ['timeoff', 'bonus-recognitions', 'my-schedule', 'my-best-site-report', 'safe-site-report', 'open-positions']
     };
@@ -44,6 +45,11 @@ class App extends Component {
             {app}
         </div>
     );
+  }
+
+  // LIFE CYCLE METHODS
+  componentDidMount(){
+    
   }
 }
 
