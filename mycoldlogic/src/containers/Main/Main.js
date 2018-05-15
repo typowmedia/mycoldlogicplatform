@@ -10,14 +10,29 @@ import OpenPosition from '../OpenPosition/OpenPosition';
 import SafeSite from '../SafeSite/SafeSite';
 
 class Main extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      displayMenu: false,
+    };
+    this.toggleUserMenu = this.toggleUserMenu.bind(this);
+  }
+
+  toggleUserMenu = () => {
+    this.setState(prevState => ({displayMenu: !prevState.displayMenu}));
+  };
+
   render(){
     return(
       <div>
-        <Header
-          {...this.props}
-        />
         <Router>
           <div>
+            <Header
+              {...this.props}
+              toggleMenu={this.toggleUserMenu}
+              displayMenu={this.state.displayMenu}
+              />
             <Route exact path='/' render={() => <Dashboard {...this.props}/>} />
             <Route path='/timeoff' render={() => <Timeoff {...this.props}/>} />
             <Route path='/bonus-recognitions' render={() => <BonusRecognition {...this.props}/>} />

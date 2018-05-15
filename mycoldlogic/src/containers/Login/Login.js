@@ -10,36 +10,72 @@ class Login extends Component {
 
     this.state = {
       requestPassword: false,
-      error: false
+      passwordRequestSent: false,
+      username: '',
+      password: ''
     };
   }
-  requestPass = () => {
-    this.setState({requestPassword: true});
-  }
-  authenticateUser = () => {
-    // send API call out to authenticate user
-    // send authenticated user data back to App Component via prop.
 
-    // axios.get(`https://clcresttest.azurewebsites.net/api/Login/Associates/`)
-    //   .then(res => {
-    //     console.log(res.data);
-    //   });
-    
-    this.props.logUserIn();
-  }
-  render(){
-    let login = (
-      <LoginForm
-        togglePasswordRequest={this.requestPass}
-        authenticateUser={this.authenticateUser}
-        />);
-    if(this.state.requestPassword){
-      login = <RequestPassword />
+    requestPass = (e) => {
+      e.preventDefault();
+      this.setState({requestPassword: true, password: ''});
     }
+
+    requestPassword = (e) => {
+      e.preventDefault();
+      // send request off for user Password
+      console.log('Password Request Sent');
+      this.setState({
+        passwordRequestSent: true
+      }, () => {
+        setTimeout(() => {
+          this.setState(
+            prevState => ({
+              passwordRequestSent: !prevState.passwordRequestSent,
+              requestPassword: false,
+              username: '',
+              password: ''
+            }));
+        }, 3000)
+      });
+    };
+    usernameChangeHandler = event => {
+      this.setState({username: event.target.value});
+    };
+
+    userPasswordChangeHandler = event => {
+      this.setState({password: event.target.value});
+    }
+
+    authenticateUser = () => {
+      this.props.logUserIn();
+    }
+
+  render(){
     return(
       <div className="login">
         <Header />
-        {login}
+        {
+          !this.state.requestPassword
+          ? (
+              <LoginForm
+                togglePasswordRequest={this.requestPass}
+                authenticateUser={this.authenticateUser}
+                changeUsername={this.usernameChangeHandler}
+                changePassword={this.userPasswordChangeHandler}
+                username={this.state.username}
+              />
+            )
+          : (
+              <RequestPassword
+                changeUsername={this.usernameChangeHandler}
+                username={this.state.username}
+                clicked={this.requestPassword}
+                requestPass={this.state.requestPassword}
+                requestSent={this.state.passwordRequestSent}
+              />
+            )
+        }
       </div>
     );
   }

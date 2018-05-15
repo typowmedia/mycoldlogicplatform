@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './BonusRecognition.css';
-import { Link } from 'react-router-dom';
 import Subtitle from '../../components/Subtitle/Subtitle';
 import BackToDashboard from '../../components/BackToDashboard/BackToDashboard';
 
