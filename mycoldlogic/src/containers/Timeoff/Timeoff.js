@@ -18,11 +18,11 @@ class Timeoff extends Component {
   updateReason = (event) => {
     let reasonText = event.target.value;
     this.setState({reasonDetail: reasonText});
-  }
+  };
   submitTimeoffRequest = (event) => {
     event.preventDefault();
     this.setState(prevState => ({requestSubmitted: !prevState.requestSubmitted}))
-  }
+  };
   render(){
     let timeoff = (<TimeoffRequestForm
       updateReason={this.updateReason}

@@ -1,12 +1,13 @@
 .AskManagerForm{
   position: absolute;
     right: 0;
-
+width: 22vmax;
   height: 85%;
   padding: 20% 8% 2% 2%;
 }
 .AskManagerForm h3{
   text-align: center;
+    font-size: xx-large;
 }
 .AskManagerForm hr{
   margin: 3px auto;
@@ -15,24 +16,34 @@
   margin-top: 20px;
   display: flex;
   flex-flow: column;
+    align-items: stretch;
+    color: #0D3C55;
+}
+.select-manager {
+    position: relative;
+    align-self: center;
+    width: 100%;
 }
 .AskManagerForm form select{
-  width: 100%;
-  margin: 10px auto;
+text-align: center;
+    font-size: large;
+  width: 88%;
+  margin: 15px auto;
   background: #FFFFFF;
   border: none;
   border-bottom: 1px solid #0D3C55;
   border-radius: 2px;
 }
 .AskManagerForm input{
-  padding: 3px;
-  margin: 10px 0 10px 5px;
+    width: 100%;
+  padding: 5px 3px 5px 0;
+  margin: 10px 0 10px 0px;
   border: none;
   border-bottom: 2px solid #0D3C55;
 }
 .AskManagerForm textarea{
   width: 100%;
-  margin: 10px auto;
+  margin: 2vmax auto;
   border-radius: 15px;
 }
 /* phones less than 600px wide*/

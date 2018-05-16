@@ -10,9 +10,10 @@ class AskManagerForm extends Component {
         <form>
             <div className="select-manager">
           <select>
-            <option value="option1">Dan Imbery</option>
-            <option value="option2">Laurel O'Donnell</option>
-            <option value="option3">Shanda Hope</option>
+              <option value="option1">Select a Manager:</option>
+            <option value="option2">Dan Imbery</option>
+            <option value="option3">Laurel O'Donnell</option>
+            <option value="option4">Shanda Hope</option>
           </select>
         </div>
           <div>Subject:<input type='text' placeholder='Write your subject here'/></div>
