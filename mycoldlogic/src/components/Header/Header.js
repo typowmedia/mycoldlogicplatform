@@ -4,20 +4,26 @@ import UserMenu from './UserMenu/UserMenu';
 import ColdLogicLogo from "../../assets/ColdLogicLogo";
 
 const Header = props => {
-  let coldLogic = <h2>Welcome to My ColdLogic</h2>;
-  let user;
-  if(props.isAuthenticated){
-    coldLogic = <ColdLogicLogo color={'#fff'} className="header-logo"/>;
-    user = (
-    <div className="Header-user">
-      <UserMenu {...props}/>
-      Welcome {props.user.name}!
-    </div>);
-  }
   return(
     <div className="Header">
-      {user}
-      {coldLogic}
+        {
+          !props.isAuthenticated
+          ? (
+            <h2>Welcome to My ColdLogic</h2>
+          )
+          : (
+            <div className="Header-user">
+            <UserMenu {...props}/>
+            <p>
+            Welcome {props.user.name}!
+            </p>
+            <div className='Header-manager'></div>
+            </div>
+          )
+        }
+        {
+          props.isAuthenticated ? <ColdLogicLogo color={'#fff'} className="header-logo"/> : null
+        }
     </div>
 
   );
