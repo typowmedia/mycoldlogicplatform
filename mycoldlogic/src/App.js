@@ -10,13 +10,17 @@ class App extends Component {
     super(props);
 
     this.state = {
-      isAuthenticated: false,
-      user: 'Luis',
+      isAuthenticated: true,
+      user: {
+        name: 'Luis',
+        mananger: 'Dan Emberly',
+        accessLevel: 1
+      },
       navLinks: ['timeoff', 'bonus-recognitions', 'my-schedule', 'my-best-site-report', 'safe-site-report', 'open-positions']
     };
   }
 
-  loginUser = (user) => {
+  logUserIn = (user) => {
     this.setState({
       isAuthenticated: true,
       user: {
@@ -27,16 +31,21 @@ class App extends Component {
     });
   }
 
+  logUserOut = () => {
+    this.setState({isAuthenticated: false, user: ''});
+  };
+
   render() {
     let app = (
       <Login
-        logUserIn={this.loginUser}
+        logUserIn={this.logUserIn}
         />);
-    if(this.state.isAuthenticated && this.state.user){
+    if(this.state.isAuthenticated && this.state.user !== ''){
       app = (
         <Main
           user={this.state.user}
           isAuthenticated={this.state.isAuthenticated}
+          logUserOut={this.logUserOut}
           navLinks={this.state.navLinks}
           />);
     }
@@ -49,7 +58,7 @@ class App extends Component {
 
   // LIFE CYCLE METHODS
   componentDidMount(){
-    
+
   }
 }
 

@@ -1,0 +1,24 @@
+.UserMenu{
+  position: relative;
+}
+.UserMenu button {
+  padding: 8px;
+  font-size: 1.6em;
+  color: #EEE;
+  background: none;
+  border: none;
+  outline: none;
+}
+.UserMenu button:hover {
+  color: #2595B7;
+}
+.UserMenu button:active {
+  color: #1b6f87;
+}
+.UserMenu li{
+  padding: 15px 30px;
+}
+#logoutBtn {
+  color: black;
+  font-size: 1rem;
+}
