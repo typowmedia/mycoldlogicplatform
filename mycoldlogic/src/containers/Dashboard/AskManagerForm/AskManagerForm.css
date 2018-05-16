@@ -1,6 +1,9 @@
 .AskManagerForm{
-  height: 60%;
-    padding: 16px 50px 16px 16px;
+  position: absolute;
+    right: 0;
+
+  height: 85%;
+  padding: 20% 8% 2% 2%;
 }
 .AskManagerForm h3{
   text-align: center;
@@ -17,7 +20,9 @@
   width: 100%;
   margin: 10px auto;
   background: #FFFFFF;
-  border: 1px solid #0D3C55;
+  border: none;
+  border-bottom: 1px solid #0D3C55;
+  border-radius: 2px;
 }
 .AskManagerForm input{
   padding: 3px;
@@ -32,7 +37,11 @@
 }
 /* phones less than 600px wide*/
 @media screen and (min-device-width: 330px)and (max-width: 600px){
-
+    .AskManagerForm{
+        position: relative;
+        height: 70%;
+        padding: 2% 8% 2% 2%;
+    }
 }
 /* phones bigger than 600px & less than 768px wide*/
 @media screen and (min-device-width: 600px)and (max-width: 768px){
