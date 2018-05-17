@@ -10,7 +10,7 @@ const TimeoffRequestForm = ( props ) => {
         <label htmlFor='toDate'>To</label>
         <input type='date' name='toDate' />
       </div>
-      <div>
+      <div className='pickreason'>
         <label htmlFor='reason'>Reason</label>
         <select name='reason'>
           <option value='option 1'>Vacation</option>
@@ -19,7 +19,7 @@ const TimeoffRequestForm = ( props ) => {
           <option value='option 4'>Other</option>
         </select>
       </div>
-      <div>
+      <div className="reasontextarea">
         <label htmlFor='reasonDetail'>More Detail:</label>
         <textarea rows='4' name='reasonDetail' onChange={props.updateReason} placeholder='Please give more details here'>{props.reasonDetail}</textarea>
       </div>

@@ -15,6 +15,38 @@
     speak-date: dmy;
 }
 
+.pickreason {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    margin: 30px 0;
+}
+
+.pickreason select {
+    text-align: center;
+    width: 50%;
+    margin: 1vmax auto;
+    background: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid #0D3C55;
+    border-radius: 2px;
+}
+
+.reasontextarea textarea {
+    width: 100%;
+    margin: 1vmax auto;
+    border-radius: 15px;
+}
+.reasontextarea textarea:placeholder-shown, .reasontextarea textarea:read-write {
+    padding: 2px 10px;
+}
+
+.TimeoffRequestForm button  {
+    margin: 1vmax auto;
+    font-size: larger;
+}
+
 /* smart watches (just in case) */
 @media screen and (min-device-width: 150px)and (max-width: 330px) {
 
