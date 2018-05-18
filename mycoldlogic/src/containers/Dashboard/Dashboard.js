@@ -13,8 +13,16 @@ class Dashboard extends Component {
     };
   }
 
+  componentDidMount(){
+    // INITIAL ANNCOUNCEMENT PULL FROM API
+    // ADD EVENT LISTENER FOR POSSIBLE UPDATES FOR ANNCOUNCEMENTS??
+  }
+  componentWillUnmount(){
+    //REMOVE EVENT LISTENER IF ADDED
+  }
   render(){
-      return(<div>
+      return(
+        <div>
           <Announcements />
           <div className='Dashboard-flex-container'>
               <Nav navLinks={this.props.navLinks}/>
@@ -24,7 +32,8 @@ class Dashboard extends Component {
                 updateMessage={this.updateMessage}
                 />
           </div>
-      </div>);
+        </div>
+    );
   }
 }
 

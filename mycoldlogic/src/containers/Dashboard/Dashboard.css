@@ -1,9 +1,10 @@
 .Dashboard-flex-container{
-    height: 70vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+  width: 90%;
+  margin: 0 auto;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
 }
 
 /* smart watches (just in case) */
