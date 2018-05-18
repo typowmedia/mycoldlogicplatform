@@ -28,11 +28,17 @@ class UserMenu extends Component {
       overflow: 'hidden',
       transition: '2s'
     }
-
+    let flip = {
+      transform: "rotate(180deg)",
+      transition: ".5s"
+    };
+    let unflip = {
+      transition: ".5s"
+    };
 
     return(
       <div className='UserMenu'>
-      <button onClick={this.toggleMenu}><i className="fas fa-bars"></i></button>
+      <button style={this.state.toggleMenu ? flip : unflip} onClick={this.toggleMenu}><i className="fas fa-bars"></i></button>
       <ul style={style}>
         <li><Link to='/' onClick={this.toggleMenu}>Dashboard</Link></li>
         <li><Link to='/my-schedule' onClick={this.toggleMenu}>My Schedule</Link></li>
