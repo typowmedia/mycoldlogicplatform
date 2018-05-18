@@ -9,15 +9,20 @@ class Dashboard extends Component {
     super(props);
 
     this.state = {
-      error: true
+      announcements: {}
     };
   }
+
   render(){
       return(<div>
-          <Announcements/>
+          <Announcements />
           <div className='Dashboard-flex-container'>
               <Nav navLinks={this.props.navLinks}/>
-              <AskManagerForm/>
+              <AskManagerForm
+                selectManager={this.selectManager}
+                updateSubject={this.updateSubject}
+                updateMessage={this.updateMessage}
+                />
           </div>
       </div>);
   }
