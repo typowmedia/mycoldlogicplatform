@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './AskManagerForm.css';
 import ErrorMessage from '../../../components/ErrorMessage/ErrorMessage';
+import { errorCheck } from '../../../utilities/errorCheck';
 
 class AskManagerForm extends Component {
   constructor(props) {
@@ -34,11 +35,11 @@ class AskManagerForm extends Component {
     let error;
     event.preventDefault();
     if (this.state.selectedMgr === '') {
-      error = this.setError('manager')
+      error = errorCheck('manager')
     } else if (this.state.subject === '') {
-      error = this.setError('subject')
+      error = errorCheck('subject')
     } else if (this.state.message === '') {
-      error = this.setError('message')
+      error = errorCheck('message')
     };
     if (error) {
       this.setState({error: error});
@@ -49,31 +50,7 @@ class AskManagerForm extends Component {
     }
   };
 
-  setError = (error) => {
-    let err;
-    switch (error) {
-      case 'manager':
-        err = {
-          message: 'Please choose a manager to ask a question.',
-          type: error
-        };
-        break;
-      case 'subject':
-        err = {
-          message: 'Please enter a subject.',
-          type: error
-        };
-        break;
-      case 'message':
-        err = {
-          message: 'Please enter a message before sending.',
-          type: error
-        };
-        break;
-      default: '';
-    }
-    return err;
-  };
+
   render(){
     const characterClassName = {color: 'black'};
     if (this.state.charCount > 150) {

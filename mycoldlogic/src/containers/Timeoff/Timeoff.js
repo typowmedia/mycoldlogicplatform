@@ -3,43 +3,95 @@ import TimeoffRequestForm from './TimeoffRequestForm/TimeoffRequestForm';
 import RequestSuccess from '../../components/RequestSuccess/RequestSuccess';
 import Subtitle from '../../components/Subtitle/Subtitle';
 import './Timeoff.css';
+import { errorCheck } from '../../utilities/errorCheck';
+
 
 class Timeoff extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      reasonDetail: '',
-      requestSubmitted: false
+      reason: '',
+      message: '',
+      toDate: '',
+      fromDate: '',
+      requestSubmitted: false,
+      error: ''
     };
-    this.updateReason = this.updateReason.bind(this);
-    this.submitTimeoffRequest = this.submitTimeoffRequest.bind(this);
   }
+  submitAnotherTimeoffRequest = () => {
+    this.setState(prevState => ({
+      requestSubmitted: !prevState.requestSubmitted,
+      reason: '',
+      message: '',
+      toDate: '',
+      fromDate: '',
+      error: ''
+    }))
+  };
   updateReason = (event) => {
-    let reasonText = event.target.value;
-    this.setState({reasonDetail: reasonText});
+    this.setState({reason: event.target.value, error: ''});
+  };
+  updateFromDate = (event) => {
+    this.setState({fromDate: event.target.value, error: ''});
+  };
+  updateToDate = (event) => {
+    this.setState({toDate: event.target.value, error: ''});
+  };
+  updateMessage = (event) => {
+    this.setState({message: event.target.value, error: ''});
+  };
+  closeError = () => {
+    this.setState({error: ''});
   };
   submitTimeoffRequest = (event) => {
     event.preventDefault();
-    this.setState(prevState => ({requestSubmitted: !prevState.requestSubmitted}))
+    let error;
+    event.preventDefault();
+    if (this.state.fromDate === '') {
+      error = errorCheck('fromDate')
+    } else if (this.state.toDate === '') {
+      error = errorCheck('toDate')
+    } else if (this.state.reason === '') {
+      error = errorCheck('reason')
+    } else if (this.state.message === '') {
+      error = errorCheck('message')
+    };;
+    if (error) {
+      this.setState({error: error});
+    } else {
+      // SEND MESSAGE
+      console.log(this.state.reason, this.state.toDate, this.state.fromDate, this.state.message);
+      this.setState(prevState => ({requestSubmitted: !prevState.requestSubmitted, error: ''}))
+    }
   };
   render(){
-    let timeoff = (<TimeoffRequestForm
-      updateReason={this.updateReason}
-      submitTimeoffRequest={this.submitTimeoffRequest}
-       />);
-    if(this.state.requestSubmitted){
-      timeoff = (
-        <RequestSuccess
-          successMessage='Thank you for submitting your time off request through your ColdLogic portal. One of your managers will review the request and get back to you soon with an answer.'
-          clicked={this.submitTimeoffRequest}
-          />
-      )
-    }
     return(
       <div className='Timeoff'>
         <Subtitle height='70px' icon={this.props.navLinks[0]} title='Time Off Request' />
-        {timeoff}
+        {
+          this.state.requestSubmitted
+          ?
+          (
+            <RequestSuccess
+              successMessage='Thank you for submitting your time off request through your ColdLogic portal. One of your managers will review the request and get back to you soon with an answer.'
+              clicked={this.submitAnotherTimeoffRequest}
+              />
+          )
+          :
+          (
+            <TimeoffRequestForm
+              errorMessage={this.state.error}
+              updateReason={this.updateReason}
+              fromDate={this.updateFromDate}
+              toDate={this.updateToDate}
+              updateMessage={this.updateMessage}
+              submitTimeoffRequest={this.submitTimeoffRequest}
+              message={this.state.message}
+              closeError={this.closeError}
+            />
+          )
+        }
       </div>
     );
   }
