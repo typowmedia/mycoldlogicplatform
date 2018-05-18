@@ -16,26 +16,19 @@ class UserMenu extends Component {
   };
 
   render(){
-    const style = {
-      position: 'absolute',
-      top: '55px',
-      width: '200px',
-      height: 'auto',
-      left: '-10px',
-      zIndex: '1',
-      listStyle: 'none',
-      background: '#CCC',
-      overflow: 'hidden',
-      transition: '2s'
-    }
-    this.state.toggleMenu ? style.height = '0px' : null;
+    let flip = {
+      transform: "rotate(180deg)",
+    };
+    let slide = {
+      transform: 'scale(1)',
+    };
     return(
       <div className='UserMenu'>
-      <button onClick={this.toggleMenu}><i className="fas fa-bars"></i></button>
-      <ul style={style}>
-        <li><Link to='/'>Dashboard</Link></li>
-        <li><Link to='/my-schedule'>My Schedule</Link></li>
-        <li><Link to='/timeoff'>Request Timeoff</Link></li>
+      <button style={this.state.toggleMenu ? flip : null} onClick={this.toggleMenu}><i className="fas fa-bars"></i></button>
+      <ul style={this.state.toggleMenu ? slide : null}>
+        <li><Link to='/' onClick={this.toggleMenu}>Dashboard</Link></li>
+        <li><Link to='/my-schedule' onClick={this.toggleMenu}>My Schedule</Link></li>
+        <li><Link to='/timeoff' onClick={this.toggleMenu}>Request Timeoff</Link></li>
         <li>
         <button id='logoutBtn' onClick={this.props.logUserOut}>
         LogOut
