@@ -7,9 +7,11 @@ const Nav = ( props ) => {
     return <NavLink key={index} route={link} />});
 
     return(
-      <ul className='Nav'>
-        {nav}
-      </ul>
+      <div className='Nav-container'>
+        <ul className='Nav'>
+          {nav}
+        </ul>
+      </div>
     );
 };
 
