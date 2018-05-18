@@ -1,13 +1,24 @@
 .RequestSuccess{
-  width: 80%;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+  width: 100%;
+  align-items: center;
+    margin-top: 10vmax;
 }
 .RequestSuccess p{
-  margin-top: 40px;
+  display: flex;
+  font-size: x-large;
+  text-align: center;
+  width: 80%;
+  margin-top: 46px;
 }
 .RequestSuccess div{
-  margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
 }
+
 /* smart watches (just in case) */
 @media screen and (min-device-width: 150px)and (max-width: 330px){
 

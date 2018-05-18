@@ -17,7 +17,7 @@ class UserMenu extends Component {
 
   render(){
     let flip = {
-      transform: "rotate(180deg)",
+      transform: "rotate(90deg)",
     };
     let slide = {
       transform: 'scale(1)',

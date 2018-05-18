@@ -9,10 +9,12 @@
     display: flex;
     justify-content: space-around;
     font-size: larger;
-    margin: 30px 0;
+    margin: 30px 0 0 0;
 }
+
 .pickdate input {
     speak-date: dmy;
+    font-size: large;
 }
 
 .pickreason {
@@ -20,7 +22,7 @@
     justify-content: space-around;
     align-items: center;
     font-size: larger;
-    margin: 30px 0;
+    margin: 30px 0 0 0;
 }
 
 .pickreason select {
@@ -37,6 +39,7 @@
     width: 100%;
     margin: 1vmax auto;
     border-radius: 15px;
+    height: 140px;
 }
 .reasontextarea textarea:placeholder-shown, .reasontextarea textarea:read-write {
     padding: 2px 10px;
@@ -67,7 +70,9 @@
 
 /* tablets / Laptops more than 900px  and less than 1200px wide*/
 @media screen and (min-device-width: 900px)and (max-width: 1200px){
-
+    .TimeoffRequestForm{
+        width: 40vmax;
+    }
 }
 
 /* Laptops and Monitors more than 1200px  and less than 1800px wide*/
