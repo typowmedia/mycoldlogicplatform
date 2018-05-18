@@ -8,12 +8,27 @@
   background: none;
   border: none;
   outline: none;
+  transition: .5s;
 }
 .UserMenu button:hover {
   color: #2595B7;
 }
 .UserMenu button:active {
   color: #1b6f87;
+}
+.UserMenu ul{
+  position: absolute;
+  top: 55px;
+  width: 200px;
+  height: auto;
+  left: -10px;
+  z-index: 1;
+  list-style: none;
+  background: #CCC;
+  overflow: hidden;
+  transform: scale(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
 }
 .UserMenu li{
   padding: 15px 30px;
