@@ -1,7 +1,6 @@
 import React from "react";
 
 const BonusRecognitionsIcon = ( props ) => {
-    let color = props.color;
     return <svg  xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="179 34 125 91">
         <defs>
            <clipPath id="b">

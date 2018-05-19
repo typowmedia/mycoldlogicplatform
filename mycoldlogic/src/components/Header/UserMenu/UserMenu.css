@@ -27,16 +27,20 @@
   transform-origin: 0 0;
   transition: .2s ease-in-out;
 }
-.UserMenu ul:last-child:hover{
-  background-color: #f94040;
-}
+
 .UserMenu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 30px;
   color: #FFFFFF;
   text-decoration: none;
 }
 .UserMenu li:hover,li:focus,li:active {
   background-color: #F16C20;
+}
+.UserMenu li:last-child:hover {
+  background-color: #f94040;
 }
 .UserMenu a {
   text-decoration: none;
