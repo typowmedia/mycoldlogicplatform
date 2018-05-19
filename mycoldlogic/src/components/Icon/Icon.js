@@ -1,4 +1,5 @@
 import React from 'react';
+import './Icon.css';
 
 import TimeOffIcon from '../../assets/TimeOffIcon';
 import BestSiteIcon from '../../assets/MyBestSiteIcon';
@@ -10,35 +11,34 @@ import RequestPasswordIcon from '../../assets/RequestPasswordIcon';
 
 
 const Icon = ( props ) => {
-  let icon = null;
+  let icon;
   switch (props.icon) {
     case 'timeoff':
-      icon = <TimeOffIcon color='#FFF' />
+      icon = <TimeOffIcon color={'#FFF'}/>;
       break;
-
     case 'bonus-recognitions':
       icon = <BonusRecognitionsIcon color='#FFF' />;
-break;
+      break;
     case 'my-schedule':
       icon = <ScheduleIcon color='#FFF' />;
-break;
+      break;
     case 'my-best-site-report':
       icon = <BestSiteIcon color='#FFF' />;
-break;
+      break;
     case 'safe-site-report':
       icon = <SafeSiteIcon color='#FFF' />;
-
+      break;
     case 'open-positions':
       icon = <OpenPositionIcon color='#FFF' />;
-break;
+      break;
     case 'request-password':
       icon = <RequestPasswordIcon color='#FFF' />;
-break;
+      break;
     default: icon = null;
 
   }
   return (
-    <div style={{height: `${props.height}`, width: `${props.height}`}}>
+    <div style={{height: `${props.size}`, width: `${props.size}`}}>
         {icon}
     </div>
   )

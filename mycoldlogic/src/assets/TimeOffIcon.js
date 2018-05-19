@@ -1,9 +1,8 @@
 import React from 'react';
 
 const TimeOffIcon = ( props ) => {
-    return <svg xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink" viewBox="0 0 125 125"
-                aria-labelledby="title">
-        <title id="title">Time Off Request</title>
+    return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125 125">
+        <title>Time Off Request</title>
         <defs>
             <clipPath id="b">
                 <rect width="125" height="125"/>
