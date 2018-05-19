@@ -10,9 +10,7 @@ class App extends Component {
     this.state = {
       isAuthenticated: true,
       user: {
-        name: 'Luis',
-        mananger: 'Dan Emberly',
-        accessLevel: 1
+        firstName: 'Luis',
       },
       navLinks: [
         'timeoff',
@@ -21,30 +19,32 @@ class App extends Component {
         'my-best-site-report',
         'safe-site-report',
         'open-positions'
-      ]
+      ],
+      tempRes: '',
+      error: ''
     };
   }
 
   logUserIn = (user) => {
     this.setState({
       isAuthenticated: true,
-      user: {
-        name: 'Luis',
-        mananger: 'Dan Emberly',
-        accessLevel: 1
-      }
+      //user: user
     });
   }
 
   logUserOut = () => {
-    this.setState({isAuthenticated: false, user: ''});
+    this.setState({
+      isAuthenticated: false,
+      user: ''});
   };
 
   render() {
-    let app = (
+    let app =
+    (
       <Login
         logUserIn={this.logUserIn}
-        />);
+        />
+    );
     if(this.state.isAuthenticated && this.state.user !== ''){
       app = (
         <Main
@@ -61,10 +61,6 @@ class App extends Component {
     );
   }
 
-  // LIFE CYCLE METHODS
-  componentDidMount(){
-
-  }
 }
 
 export default App;

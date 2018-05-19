@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ScheduleIcon = ( props ) => {
-    let color = props.color;
     return <svg xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink"
                 viewBox="358 0 112 125" aria-labelledby="title">
             <title id="title">View my Schedule</title>

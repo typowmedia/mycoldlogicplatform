@@ -1,7 +1,6 @@
 import React from 'react';
 
 const OpenPositionIcon = (props) => {
-    let color = props.color;
     return <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                 viewBox="358 173 103 125">
         <defs>

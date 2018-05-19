@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './AskManagerForm.css';
 import ErrorMessage from '../../../components/ErrorMessage/ErrorMessage';
+import SuccessMessage from '../../../components/SuccessMessage/SuccessMessage';
 import { errorCheck } from '../../../utilities/errorCheck';
 
 class AskManagerForm extends Component {
@@ -46,7 +47,16 @@ class AskManagerForm extends Component {
     } else {
       // SEND MESSAGE
       console.log(this.state.selectedMgr, this.state.subject, this.state.message);
-      this.setState({error: ''});
+      this.setState( prevState => ({
+        selectedMgr: '',
+        subject: '',
+        message: '',
+        error: '',
+        success: {
+          message: `Message sent! ${this.state.selectedMgr} will contact you shortly.`
+        },
+        charCount: ''
+      }));
     }
   };
 
@@ -71,13 +81,23 @@ class AskManagerForm extends Component {
             )
           : null
         }
+        {
+          this.state.success !== ''
+          ? (
+              <SuccessMessage
+                message={this.state.success.message}
+                clicked={() => this.setState({success: ''})}
+                />
+            )
+          : null
+        }
         <h3>Ask a Manager</h3>
         <hr/>
 
         <form>
             <div className="select-manager">
-              <select style={this.state.error.type === 'manager' ? {border: '1px solid red'} : null} onChange={this.selectManager}>
-                  <option value="">Select a Manager:</option>
+              <select style={this.state.error.type === 'manager' ? {border: '1px solid red'} : null} onChange={this.selectManager} value={this.state.selectedMgr}>
+                  <option value="select">Select a Manager:</option>
                   <option value="Dan Imbery">Dan Imbery</option>
                   <option value="Laurel O'Donnell">Laurel O'Donnell</option>
                   <option value="Shanda Hope">Shanda Hope</option>

@@ -15,7 +15,7 @@ const Header = props => {
             <div className="Header-user">
             <UserMenu {...props}/>
             <p>
-            Welcome {props.user.name}!
+            Welcome {props.user.firstName}!
             </p>
             <div className='Header-manager'></div>
             </div>

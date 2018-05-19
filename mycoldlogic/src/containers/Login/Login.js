@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LoginForm from './LoginForm/LoginForm';
 import RequestPassword from './RequestPassword/RequestPassword';
 import Header from '../../components/Header/Header';
+//import axios from 'axios';
 
 class Login extends Component {
   constructor(props) {
@@ -47,6 +48,15 @@ class Login extends Component {
     }
 
     authenticateUser = () => {
+      // axios.get('https://mycoldlogicca.azurewebsites.net/api/Login/Associates')
+      // .then((result) => {
+      //   console.log(result.data[0]);
+      //   this.props.logUserIn(result.data[0]);
+      // })
+      // .catch((err) => {
+      //   console.log(err);
+      // })
+
       this.props.logUserIn();
     }
 

@@ -1,0 +1,22 @@
+.SuccessMessage{
+  position: relative;
+  background: #78c962;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 1px 1px 4px #000;
+}
+.SuccessMessage button{
+  position: absolute;
+  top: 0;
+  right: 3px;
+  margin: 3px;
+  background: none;
+  color: white;
+  border: none;
+}
+.SuccessMessage button:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
