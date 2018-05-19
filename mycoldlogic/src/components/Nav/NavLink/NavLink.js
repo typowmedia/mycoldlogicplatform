@@ -24,7 +24,7 @@ const NavLink = ( props ) => {
   return (
     <div className='NavLink-flex'>
       <Link to={props.route} className='NavLink'>
-        <Icon icon={props.route} size='60%'/>
+        <Icon icon={props.route} size='60%' color='#fff'/>
       </Link>
       <p>
         {name}

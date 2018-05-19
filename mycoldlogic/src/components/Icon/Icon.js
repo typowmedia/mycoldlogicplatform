@@ -14,25 +14,25 @@ const Icon = ( props ) => {
   let icon;
   switch (props.icon) {
     case 'timeoff':
-      icon = <TimeOffIcon color={'#FFF'}/>;
+      icon = <TimeOffIcon color={props.color}/>;
       break;
     case 'bonus-recognitions':
-      icon = <BonusRecognitionsIcon color='#FFF' />;
+      icon = <BonusRecognitionsIcon color={props.color} />;
       break;
     case 'my-schedule':
-      icon = <ScheduleIcon color='#FFF' />;
+      icon = <ScheduleIcon color={props.color} />;
       break;
     case 'my-best-site-report':
-      icon = <BestSiteIcon color='#FFF' />;
+      icon = <BestSiteIcon color={props.color} />;
       break;
     case 'safe-site-report':
-      icon = <SafeSiteIcon color='#FFF' />;
+      icon = <SafeSiteIcon color={props.color} />;
       break;
     case 'open-positions':
-      icon = <OpenPositionIcon color='#FFF' />;
+      icon = <OpenPositionIcon color={props.color} />;
       break;
     case 'request-password':
-      icon = <RequestPasswordIcon color='#FFF' />;
+      icon = <RequestPasswordIcon color={props.color} />;
       break;
     default: icon = null;
 
