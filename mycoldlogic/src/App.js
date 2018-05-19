@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Login from './containers/Login/Login';
 import Main from './containers/Main/Main';
-import axios from 'axios';
-
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +14,14 @@ class App extends Component {
         mananger: 'Dan Emberly',
         accessLevel: 1
       },
-      navLinks: ['timeoff', 'bonus-recognitions', 'my-schedule', 'my-best-site-report', 'safe-site-report', 'open-positions']
+      navLinks: [
+        'timeoff',
+        'bonus-recognitions',
+        'my-schedule',
+        'my-best-site-report',
+        'safe-site-report',
+        'open-positions'
+      ]
     };
   }
 

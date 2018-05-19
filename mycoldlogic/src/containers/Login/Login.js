@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import LoginForm from './LoginForm/LoginForm';
 import RequestPassword from './RequestPassword/RequestPassword';
 import Header from '../../components/Header/Header';
-import axios from 'axios';
 
 class Login extends Component {
   constructor(props) {
@@ -16,13 +15,13 @@ class Login extends Component {
     };
   }
 
-    requestPass = (e) => {
-      e.preventDefault();
+    requestPass = (event) => {
+      event.preventDefault();
       this.setState({requestPassword: true, password: ''});
     }
 
-    requestPassword = (e) => {
-      e.preventDefault();
+    requestPassword = (event) => {
+      event.preventDefault();
       // send request off for user Password
       console.log('Password Request Sent');
       this.setState({

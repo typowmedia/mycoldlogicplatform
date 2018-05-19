@@ -19,7 +19,7 @@ const NavLink = ( props ) => {
     break;
     case 'open-positions': name = 'Bid for a open position';
     break;
-    default: '';
+    default: name = '';
   }
   return (
     <div className='NavLink-flex'>

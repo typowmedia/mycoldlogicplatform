@@ -36,6 +36,20 @@ const errorCheck = (error) => {
       };
       break;
 
+      case 'incidentDate':
+      err = {
+        message: 'Please select a date.',
+        type: error
+      };
+      break;
+
+      case 'incidentLocation':
+      err = {
+        message: 'Please enter a location.',
+        type: error
+      };
+      break;
+
       case 'message':
       err = {
         message: 'Please enter a message before sending.',
