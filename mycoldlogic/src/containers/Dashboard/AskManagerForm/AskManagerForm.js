@@ -19,17 +19,26 @@ class AskManagerForm extends Component {
   }
 
   selectManager = (event) => {
-    this.setState({selectedMgr: event.target.value, error: ''});
+    this.setState({
+      selectedMgr: event.target.value,
+      error: '',
+      success: ''
+    });
   };
   changeSubject = (event) => {
-    this.setState({subject: event.target.value, error: ''});
+    this.setState({
+      subject: event.target.value,
+      error: '',
+      success: ''
+    });
   };
   changeMessage = (event) => {
     if(event.target.value.length > 200) return;
     this.setState({
       message: event.target.value,
       charCount: event.target.value.length,
-      error: ''
+      error: '',
+      success: ''
     });
   };
   submitQuestion = (event) => {
@@ -43,7 +52,7 @@ class AskManagerForm extends Component {
       error = errorCheck('message')
     };
     if (error) {
-      this.setState({error: error});
+      this.setState({error: error, success: ''});
     } else {
       // SEND MESSAGE
       console.log(this.state.selectedMgr, this.state.subject, this.state.message);
@@ -74,21 +83,21 @@ class AskManagerForm extends Component {
         {
           this.state.error.type
           ? (
-              <ErrorMessage
-                message={this.state.error.message}
-                clicked={() => this.setState({error: ''})}
-                />
-            )
+            <ErrorMessage
+              message={this.state.error.message}
+              clicked={() => this.setState({error: ''})}
+              />
+          )
           : null
         }
         {
           this.state.success !== ''
           ? (
-              <SuccessMessage
-                message={this.state.success.message}
-                clicked={() => this.setState({success: ''})}
-                />
-            )
+            <SuccessMessage
+              message={this.state.success.message}
+              clicked={() => this.setState({success: ''})}
+              />
+          )
           : null
         }
         <h3>Ask a Manager</h3>

@@ -1,39 +1,41 @@
-.Dashboard-flex-container{
+.Dashboard-flex-container {
   width: 90%;
-  margin: 0 auto;
-  height: 70vh;
-  display: grid;
-  grid-template-columns: 75% 25%;
+  margin: 16px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
 }
-
+.Dashboard-nav-container {
+  width: 75%
+}
+.Dashboard-form-container {
+  width: 25%
+}
 /* smart watches (just in case) */
-@media screen and (min-device-width: 150px)and (max-width: 330px) {
-    Announcements {
-        display: none;
-    }
+@media screen and (max-width: 330px) {
+  
 }
 /* phones less than 600px wide*/
-@media screen and (min-device-width: 330px)and (max-width: 600px){
-    Announcements {
-        display: none;
-    }
-    .Dashboard-flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+@media screen and (max-width: 600px){
+  .Dashboard-form-container{
+    width: 100%;
+  }
 }
 /* phones bigger than 600px & less than 768px wide*/
-@media screen and (min-device-width: 600px)and (max-width: 768px){
-    Announcements {
-        display: none;
+@media screen and (max-width: 768px){
+    .Dashboard-nav-container{
+      width: 100%;
+      margin: 20px 0 10px 0;
+    }
+    .Dashboard-form-container{
+      width: 60%;
+      margin: 10px auto;
     }
 }
 
 /* tablets less than 900px wide*/
-@media screen and (min-device-width: 768px)and (max-width: 900px){
-
+@media screen and (max-width: 900px){
 }
 
 /* tablets / Laptops more than 900px  and less than 1200px wide*/

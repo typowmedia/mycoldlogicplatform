@@ -1,7 +1,8 @@
 .ErrorMessage{
-  position: relative;
+  position: absolute;
+  width: 100%;
   background: #f94040;
-  padding: 8px;
+  padding: 15px;
   box-sizing: border-box;
   border-radius: 10px;
   color: white;

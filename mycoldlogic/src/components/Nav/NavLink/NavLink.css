@@ -22,29 +22,29 @@
   padding-top: 5px;
 }
 /* smart watches (just in case) */
-@media screen and (min-device-width: 150px)and (max-width: 330px){
+/* @media screen and (min-device-width: 150px)and (max-width: 330px){
     .NavLink {
         display: flex;
         flex-wrap: wrap;
         width: 25vmax;
         height: 25vmax;
         background: #F16C20;
-        color: #EEEEEE;
+        color: blue;
         margin: 8% 0 8% 0;
     }
 }
 /* phones less than 600px wide*/
-@media screen and (min-device-width: 330px)and (max-width: 600px){
+/* @media screen and (min-device-width: 330px)and (max-width: 600px){
     .NavLink {
         display: flex;
         flex-wrap: wrap;
         width: 25vmax;
         height: 25vmax;
         background: #F16C20;
-        color: #EEEEEE;
         margin: 8% 0 8% 0;
     }
-}
+}  */
+
 /* phones bigger than 600px & less than 768px wide*/
 @media screen and (min-device-width: 600px)and (max-width: 768px){
 
