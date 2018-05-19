@@ -1,19 +1,10 @@
 import React from 'react';
 
 const SafeSiteIcon = (props) => {
-    let color = props.color;
-    return <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
-                viewBox="179 173 125 125">
-        <defs>
-            <clipPath id="b">
-                <rect x="179" y="173" width="125" height="125"/>
-            </clipPath>
-        </defs>
-        <g id="savesitesvg" clipPath="url(#b)">
-            <path
-                d="M114.5,2H14.5A12.483,12.483,0,0,0,2.063,14.5L2,127l25-25h87.5A12.537,12.537,0,0,0,127,89.5v-75A12.537,12.537,0,0,0,114.5,2ZM45.75,58.25H33.25V45.75h12.5Zm25,0H58.25V45.75h12.5Zm25,0H83.25V45.75h12.5Z"
-                transform="translate(177 171)" fill={props.color}/>
-        </g>
+    return <svg id="SafeSiteIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <title>SafeSiteIcon</title>
+                <path d="M90,0H10C4.5,0,0,4.5,0.1,10L0,100l20-20h70c5.5,0,10-4.5,10-10V10C100,4.5,95.5,0,90,0z M35,45H25V35h10V45z
+			 M55,45H45V35h10V45z M75,45H65V35h10V45z" fill={props.color}/>
     </svg>
 };
 

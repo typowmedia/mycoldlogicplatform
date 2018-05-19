@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3e111c6d-3269-4cc9-ae2b-8ba5e78f7d79" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/BonusRecognitionsIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/BonusRecognitionsIcon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/DashboardIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/DashboardIcon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/ExitIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/ExitIcon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/ScheduleIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/ScheduleIcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/OpenPositionIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/OpenPositionIcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/RequestPasswordIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/RequestPasswordIcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/SafeSiteIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/SafeSiteIcon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/TimeOffIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/assets/TimeOffIcon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/components/Header/UserMenu/UserMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/components/Header/UserMenu/UserMenu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mycoldlogic/src/components/Header/UserMenu/UserMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/components/Header/UserMenu/UserMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSite.css" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSite.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSite.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSite.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,20 +31,11 @@
       <file leaf-file-name="UserMenu.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Header/UserMenu/UserMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+            <state relative-caret-position="126">
+              <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMenu.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Header/UserMenu/UserMenu.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -60,12 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/open_positions_icon.svg" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/request_a_password_icon.svg" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/safe_site_report_icon.svg" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/bug_icon.svg" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/components/Nav/NavLink/NavLink.js" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/timeoff_icon.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/assets/time_off_icon.svg" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/components/Icon/Icon.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/assets/schedule_icon.svg" />
@@ -73,14 +63,10 @@
         <option value="$PROJECT_DIR$/mycoldlogic/src/assets/ColdLogicLogo.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/assets/BugIcon.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/assets/MyBestSiteIcon.js" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/OpenPositionIcon.js" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/RequestPasswordIcon.js" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/SafeSiteIcon.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Dashboard/Dashboard.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Login/LoginForm/LoginForm.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Login/RequestPassword/RequestPassword.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Timeoff/Timeoff.css" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSite.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSiteForm/SafeSiteForm.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/OpenPosition/OpenPosition.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/BonusRecognition/BonusRecognition.css" />
@@ -104,13 +90,23 @@
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Dashboard/AskManagerForm/AskManagerForm.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Timeoff/TimeoffRequestForm/TimeoffRequestForm.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/components/RequestSuccess/RequestSuccess.css" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/DashboardIcon.js" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/TimeOffIcon.js" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/ExitIcon.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/assets/ScheduleIcon.js" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/BonusRecognitionsIcon.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/components/Header/UserMenu/UserMenu.css" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSite.js" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSite.css" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/RequestPasswordIcon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/BonusRecognitionIcon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/BonusRecognitionsIcon.js" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/RequestPasswordIcon.js" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/TimeOffIcon.js" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/SafeSiteIcon.js" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/DashboardIcon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/DashboardIcon.js" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/ExitIcon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/ExitIcon.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/components/Header/UserMenu/UserMenu.js" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/OpenPositionIcon.svg" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/assets/OpenPositionIcon.js" />
       </list>
     </option>
   </component>
@@ -199,8 +195,24 @@
               <item name="mycoldlogicplatform" type="462c0819:PsiDirectoryNode" />
               <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Icon" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mycoldlogicplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="SafeSite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mycoldlogicplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="SafeSite" type="462c0819:PsiDirectoryNode" />
+              <item name="SafeSiteForm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,6 +228,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -262,12 +275,12 @@
       <workItem from="1526325999010" duration="1785000" />
       <workItem from="1526356281793" duration="7882000" />
       <workItem from="1526445431808" duration="3674000" />
-      <workItem from="1526498459615" duration="19056000" />
+      <workItem from="1526498459615" duration="25176000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100363000" />
+    <option name="totallyTimeSpent" value="106483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="796" extended-state="6" />
@@ -277,6 +290,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32930514" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -289,7 +303,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,104 +317,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/MyBestSiteIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/OpenPositionIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/RequestPasswordIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/SafeSiteIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/registerServiceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="2560" column="8" selection-start-line="2560" selection-start-column="8" selection-end-line="2560" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Login/RequestPassword/RequestPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Login/RequestPassword/RequestPassword.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="41" selection-start-line="41" selection-end-line="71" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSite.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSiteForm/SafeSiteForm.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/OpenPosition/OpenPosition.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" selection-start-line="6" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Announcements/Announcements.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/BonusRecognition/BonusRecognition.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Announcements/Announcement/Announcement.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Subtitle/Subtitle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -624,47 +539,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/TimeOffIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Icon/Icon.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/ExitIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/BonusRecognitionsIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/ColdLogicLogo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/DashboardIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -675,10 +555,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSiteForm/SafeSiteForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSiteForm/SafeSiteForm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/RequestPasswordIcon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="87" column="21" lean-forward="true" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/ColdLogicLogo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSite.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/TimeoffIcon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/SafeSiteIcon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/RequestPasswordIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/BonusRecognitionsIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/TimeOffIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/SafeSiteIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/BonusRecognitionIcon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/DashboardIcon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/DashboardIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/ExitIcon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/ExitIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/OpenPositionIcon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/assets/OpenPositionIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/Header/UserMenu/UserMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        <state relative-caret-position="126">
+          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

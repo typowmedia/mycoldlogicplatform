@@ -73,7 +73,7 @@ class SafeSite extends Component {
   };
   render(){
     let safeSite = (
-      <div>
+      <div className="initial-message">
         <p>It's our responsibilty to report any concern about safety, this helps us to keep our facilities safe and our work free of concerns</p>
         <button
           className='mainBtn'
@@ -109,7 +109,7 @@ class SafeSite extends Component {
     }
     return(
       <div className='SafeSite'>
-        <img src={TempPhoto} alt=""/>
+        <img src={TempPhoto} alt="warehouse photo"/>
         <div>
           <Subtitle
             title='Safe Site Report'
