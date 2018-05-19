@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './UserMenu.css';
 import TimeOffIcon from '../../../assets/TimeOffIcon';
 import DashboardIcon from '../../../assets/DashboardIcon';
-import ScheduleIcon from '../../../assets/ScheduleIcon';
+import ScheduleIcon from '../../../assets/SafeSiteIcon';
 import ExitIcon from '../../../assets/ExitIcon';
 
 class UserMenu extends Component {
