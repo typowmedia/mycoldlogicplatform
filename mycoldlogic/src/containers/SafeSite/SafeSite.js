@@ -109,7 +109,7 @@ class SafeSite extends Component {
     }
     return(
       <div className='SafeSite'>
-        <img src={TempPhoto} alt="warehouse photo"/>
+        <img src={TempPhoto} alt=""/>
         <div>
           <Subtitle
             title='Safe Site Report'
