@@ -24,14 +24,16 @@
   left: -10px;
   z-index: 1;
   list-style: none;
-  background: #CCC;
+  background: #0D3C55;
   overflow: hidden;
   transform: scale(0);
   transform-origin: 0 0;
-  transition: .3s ease-in-out;
+  transition: .2s ease-in-out;
 }
 .UserMenu li{
   padding: 15px 30px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 #logoutBtn {
   color: black;
