@@ -5,27 +5,15 @@
   background: #1395BA;
   height: 20vh;
 }
-/* smart watches (just in case) */
-@media screen and (min-device-width: 150px)and (max-width: 330px) {
-    .Announcements {
-        display: none;
-    }
-}
-/* phones less than 600px wide*/
-@media screen and (min-device-width: 330px)and (max-width: 600px){
-    .Announcements {
-        display: none;
-    }
-}
 /* phones bigger than 600px & less than 768px wide*/
-@media screen and (min-device-width: 600px)and (max-width: 768px){
+@media screen and (max-width: 768px){
     .Announcements {
         display: none;
     }
 }
 
 /* tablets less than 900px wide*/
-@media screen and (min-device-width: 768px)and (max-width: 900px){
+@media screen and (max-width: 900px){
 
 }
 

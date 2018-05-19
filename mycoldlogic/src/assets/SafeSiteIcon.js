@@ -8,4 +8,4 @@ const SafeSiteIcon = (props) => {
     </svg>
 };
 
-export default SafeSiteIcon
+export default SafeSiteIcon;

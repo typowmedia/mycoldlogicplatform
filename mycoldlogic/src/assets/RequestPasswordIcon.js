@@ -1,7 +1,6 @@
 import React from 'react';
 
 const RequestPasswordIcon = (props) => {
-
     return <svg id="RequestPasswordIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.46 100.06">
         <title>RequestPasswordIcon</title>
             <path

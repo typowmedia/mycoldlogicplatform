@@ -1,44 +1,47 @@
 import React from 'react';
-import TimeOffIcon from '../../assets/time_off_icon.svg';
-import BestSiteIcon from '../../assets/my_best_site_icon.svg';
-import OpenPositionIcon from '../../assets/open_positions_icon.svg';
-import SafeSiteIcon from '../../assets/safe_site_report_icon.svg';
-import BonusRecognitionsIcon from '../../assets/bonus_recognitions_icon.svg';
-import ScheduleIcon from '../../assets/schedule_icon.svg';
-import RequestPasswordIcon from '../../assets/request_a_password_icon.svg';
+import './Icon.css';
+
+import TimeOffIcon from '../../assets/TimeOffIcon';
+import BestSiteIcon from '../../assets/MyBestSiteIcon';
+import OpenPositionIcon from '../../assets/OpenPositionIcon';
+import SafeSiteIcon from '../../assets/SafeSiteIcon';
+import BonusRecognitionsIcon from '../../assets/BonusRecognitionsIcon';
+import ScheduleIcon from '../../assets/ScheduleIcon';
+import RequestPasswordIcon from '../../assets/RequestPasswordIcon';
 
 
 const Icon = ( props ) => {
-  const height = props.height;
-  let icon = null;
+  let icon;
   switch (props.icon) {
     case 'timeoff':
-      icon = TimeOffIcon;
+      icon = <TimeOffIcon color={'#FFF'}/>;
       break;
     case 'bonus-recognitions':
-      icon = BonusRecognitionsIcon;
+      icon = <BonusRecognitionsIcon color='#FFF' />;
       break;
     case 'my-schedule':
-      icon = ScheduleIcon;
+      icon = <ScheduleIcon color='#FFF' />;
       break;
     case 'my-best-site-report':
-      icon = BestSiteIcon;
+      icon = <BestSiteIcon color='#FFF' />;
       break;
     case 'safe-site-report':
-      icon = SafeSiteIcon;
+      icon = <SafeSiteIcon color='#FFF' />;
       break;
     case 'open-positions':
-      icon = OpenPositionIcon;
+      icon = <OpenPositionIcon color='#FFF' />;
       break;
     case 'request-password':
-      icon = RequestPasswordIcon;
+      icon = <RequestPasswordIcon color='#FFF' />;
       break;
     default: icon = null;
 
   }
   return (
-    <img height={height} src={icon} alt=""></img>
-  );
+    <div style={{height: `${props.size}`, width: `${props.size}`}}>
+        {icon}
+    </div>
+  )
 };
 
 export default Icon;

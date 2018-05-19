@@ -8,4 +8,4 @@ const BonusRecognitionsIcon = ( props ) => {
     </svg>
 };
 
-export default BonusRecognitionsIcon
+export default BonusRecognitionsIcon;

@@ -7,4 +7,4 @@ const DashboardIcon = ( props ) => {
     </svg>
 };
 
-export default DashboardIcon
+export default DashboardIcon;

@@ -15,9 +15,7 @@ class Main extends Component {
       <div>
         <Router>
           <div>
-
             <Header {...this.props} />
-
             <Route exact path='/' render={() => <Dashboard {...this.props}/>} />
             <Route path='/timeoff' render={() => <Timeoff {...this.props}/>} />
             <Route path='/bonus-recognitions' render={() => <BonusRecognition {...this.props}/>} />

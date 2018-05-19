@@ -25,12 +25,16 @@ class Dashboard extends Component {
         <div>
           <Announcements />
           <div className='Dashboard-flex-container'>
+            <div className='Dashboard-nav-container'>
               <Nav navLinks={this.props.navLinks}/>
+            </div>
+            <div className='Dashboard-form-container'>
               <AskManagerForm
                 selectManager={this.selectManager}
                 updateSubject={this.updateSubject}
                 updateMessage={this.updateMessage}
                 />
+            </div>
           </div>
         </div>
     );
