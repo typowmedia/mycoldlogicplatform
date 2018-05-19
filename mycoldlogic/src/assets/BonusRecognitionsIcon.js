@@ -1,7 +1,11 @@
 import React from "react";
 
 const BonusRecognitionsIcon = ( props ) => {
+<<<<<<< HEAD
     return (<svg  xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="179 34 125 91">
+=======
+    return <svg  xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="179 34 125 91">
+>>>>>>> 4bb54997098e420ac80d9623662e00809c57877c
         <defs>
            <clipPath id="b">
                 <rect x="179" y="34" width="125" height="91"/>

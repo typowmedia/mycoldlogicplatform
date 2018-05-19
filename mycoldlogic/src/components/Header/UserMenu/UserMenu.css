@@ -10,10 +10,7 @@
   outline: none;
   transition: .2s;
 }
-.UserMenu button:hover {
-  color: #F16C20;
-}
-.UserMenu button:active {
+.UserMenu button:hover,button:active,button:focus {
   color: #F16C20;
 }
 .UserMenu ul{
@@ -30,12 +27,33 @@
   transform-origin: 0 0;
   transition: .2s ease-in-out;
 }
-.UserMenu li{
+
+.UserMenu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 30px;
   color: #FFFFFF;
   text-decoration: none;
 }
+.UserMenu li:hover,li:focus,li:active {
+  background-color: #F16C20;
+}
+.UserMenu li:last-child:hover {
+  background-color: #f94040;
+}
+.UserMenu a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.UserMenu a:hover,a:focus,a:active{
+  background-color: #F16C20;
+}
 #logoutBtn {
-  color: black;
+  color: #FFFFFF;
   font-size: 1rem;
+  background-color: #f94040;
+  padding: 8px 25px;
+  border-radius: 8px;
+
 }

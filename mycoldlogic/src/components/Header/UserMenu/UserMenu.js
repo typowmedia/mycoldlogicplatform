@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './UserMenu.css';
+import TimeOffIcon from '../../../assets/TimeOffIcon';
+import DashboardIcon from '../../../assets/DashboardIcon';
+import ScheduleIcon from '../../../assets/ScheduleIcon';
+import ExitIcon from '../../../assets/ExitIcon';
 
 class UserMenu extends Component {
   constructor(props) {
@@ -26,10 +30,10 @@ class UserMenu extends Component {
       <div className='UserMenu'>
       <button style={this.state.toggleMenu ? flip : null} onClick={this.toggleMenu}><i className="fas fa-bars"></i></button>
       <ul style={this.state.toggleMenu ? slide : null}>
-        <li><Link to='/' onClick={this.toggleMenu}>Dashboard</Link></li>
-        <li><Link to='/my-schedule' onClick={this.toggleMenu}>My Schedule</Link></li>
-        <li><Link to='/timeoff' onClick={this.toggleMenu}>Request Timeoff</Link></li>
-        <li>
+        <li><DashboardIcon color="#ffffff"/><Link to='/' onClick={this.toggleMenu}>Dashboard</Link></li>
+        <li><ScheduleIcon color="#ffffff"/><Link to='/my-schedule' onClick={this.toggleMenu}>My Schedule</Link></li>
+        <li><TimeOffIcon color={'#fff'}/><Link to='/timeoff' onClick={this.toggleMenu}>Request Timeoff</Link></li>
+        <li><ExitIcon color={'#fff'}/>
         <button id='logoutBtn' onClick={this.props.logUserOut}>
         LogOut
         </button>
