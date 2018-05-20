@@ -8,7 +8,7 @@
   background: none;
   border: none;
   outline: none;
-  transition: .2s;
+  transition: .15s;
 }
 .UserMenu button:hover,button:active,button:focus {
   color: #F16C20;
@@ -16,7 +16,7 @@
 .UserMenu ul{
   position: absolute;
   top: 55px;
-  width: 200px;
+  width: 250px;
   height: auto;
   left: -10px;
   z-index: 1;
@@ -25,12 +25,11 @@
   overflow: hidden;
   transform: scale(0);
   transform-origin: 0 0;
-  transition: .2s ease-in-out;
+  transition: .15s ease-in-out;
 }
 
 .UserMenu li {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 15px 30px;
   color: #FFFFFF;
@@ -52,7 +51,13 @@
 .UserMenu a:hover,a:focus,a:active{
   background-color: #F16C20;
 }
+.UserMenu svg {
+  width: 20%;
+  height: auto;
+}
+
 #logoutBtn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   color: #FFFFFF;
@@ -60,5 +65,4 @@
   background-color: #f94040;
   padding: 8px 25px;
   border-radius: 8px;
-
 }
