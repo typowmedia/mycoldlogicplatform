@@ -30,12 +30,12 @@ class UserMenu extends Component {
       <div className='UserMenu'>
       <button style={this.state.toggleMenu ? flip : null} onClick={this.toggleMenu}><i className="fas fa-bars"></i></button>
       <ul style={this.state.toggleMenu ? slide : null}>
-        <li><DashboardIcon color="#ffffff"/><Link to='/' onClick={this.toggleMenu}>Dashboard</Link></li>
-        <li><ScheduleIcon color="#ffffff"/><Link to='/my-schedule' onClick={this.toggleMenu}>My Schedule</Link></li>
-        <li><TimeOffIcon color={'#fff'}/><Link to='/timeoff' onClick={this.toggleMenu}>Request Timeoff</Link></li>
-        <li><ExitIcon color={'#fff'}/>
+        <li><Link to='/' onClick={this.toggleMenu}><DashboardIcon color={"#fff"}/>Dashboard</Link></li>
+        <li><Link to='/my-schedule' onClick={this.toggleMenu}><ScheduleIcon color={'#FFF'}/>My Schedule</Link></li>
+        <li><Link to='/timeoff' onClick={this.toggleMenu}><TimeOffIcon color={'#fff'}/>Request Timeoff</Link></li>
+        <li>
         <button id='logoutBtn' onClick={this.props.logUserOut}>
-        LogOut
+            <ExitIcon color={'#fff'} height={'5px'}/>LogOut
         </button>
         </li>
       </ul>
