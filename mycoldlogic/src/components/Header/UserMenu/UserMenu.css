@@ -54,6 +54,7 @@
 .UserMenu svg {
   width: 20%;
   height: auto;
+  margin-right: 18px;
 }
 
 #logoutBtn {
