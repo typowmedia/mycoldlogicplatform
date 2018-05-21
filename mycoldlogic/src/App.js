@@ -24,6 +24,9 @@ class App extends Component {
       error: ''
     };
   }
+  componentDidMount() {
+    console.log(window.innerWidth);
+  }
 
   logUserIn = (user) => {
     this.setState({
