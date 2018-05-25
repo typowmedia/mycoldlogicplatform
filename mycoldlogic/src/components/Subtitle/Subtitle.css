@@ -1,21 +1,19 @@
 .Subtitle{
-  margin-top: 20px;
+  margin: 20px auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 80%;
-  height: 60px;
 }
 .Subtitle img{
   flex: 2 0 0;
+  margin-right: auto;
 }
 .Subtitle h3{
-  flex: 3 0 0;
-  flex-shrink: 0;
+  width: 60%;
   text-align: center;
-  font-size: 220%;
-  display: inline-block;
-  border-bottom: 1px solid #95989A;
+  font-size: 2rem;
+  border-bottom: 3px solid #164055;
   padding-bottom: 3px;
 }
 /* smart watches (just in case) */

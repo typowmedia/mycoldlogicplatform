@@ -3,6 +3,8 @@ import './App.css';
 import Login from './containers/Login/Login';
 import Main from './containers/Main/Main';
 
+import axios from 'axios';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -25,7 +27,8 @@ class App extends Component {
     };
   }
   componentDidMount() {
-    console.log(window.innerWidth);
+    axios.get('http://mycoldlogicca.azurewebsites.net/api/Associates/1')
+      .then(res => console.log('[Login] :', res.data));
   }
 
   logUserIn = (user) => {
