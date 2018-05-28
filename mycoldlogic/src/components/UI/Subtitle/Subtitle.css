@@ -1,40 +1,28 @@
-.Header{
+.Subtitle{
+  margin: 20px auto;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  background: #0D3C55;
-  color: #FFFFFF;
-  height: 10vh;
-}
-.Header h2{
-  margin-left: 20px;
-}
-.Header #Logo {
-  margin-left: auto;
-  padding-right: 20px;
-  height: 100%;
-}
-.Header-user {
-  display: flex;
   width: 80%;
-  height: 100%;
-  align-items: center;
-  margin: 0 10px;
 }
-.Header-user p {
-  padding: 0 10px;
-  font-size: 1.3rem;
+.Subtitle img{
+  flex: 2 0 0;
+  margin-right: auto;
+}
+.Subtitle h3{
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 3px solid #164055;
+  padding-bottom: 3px;
 }
 /* smart watches (just in case) */
 @media screen and (min-device-width: 150px)and (max-width: 330px){
-  .Header {
-    display: none;
-  }
+
 }
 /* phones less than 600px wide*/
 @media screen and (min-device-width: 330px)and (max-width: 600px){
-    .Header #Logo {
-        height: 60%;
-    }
+
 }
 /* phones bigger than 600px & less than 768px wide*/
 @media screen and (min-device-width: 600px)and (max-width: 768px){

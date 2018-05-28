@@ -1,0 +1,24 @@
+.ErrorMessage{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  background: #f94040;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 1px 1px 4px #000;
+}
+.ErrorMessage button{
+  position: absolute;
+  top: 0;
+  right: 3px;
+  margin: 3px;
+  background: none;
+  color: white;
+  border: none;
+}
+.ErrorMessage button:hover{
+  cursor: pointer;
+  font-weight: bold;
+}

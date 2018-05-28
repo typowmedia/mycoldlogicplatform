@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route} from 'react-router-dom';
-import Dashboard from '../Dashboard/Dashboard';
+import Dashboard from './Dashboard/Dashboard';
 import Header from '../../components/Header/Header';
-import Timeoff from '../Timeoff/Timeoff';
-import BonusRecognition from '../BonusRecognition/BonusRecognition';
-import OpenPosition from '../OpenPosition/OpenPosition';
-import SafeSite from '../SafeSite/SafeSite';
+import Timeoff from './Timeoff/Timeoff';
+import BonusRecognition from './BonusRecognition/BonusRecognition';
+import OpenPosition from './OpenPosition/OpenPosition';
+import SafeSite from './SafeSite/SafeSite';
 
 class Main extends Component {
   render(){
