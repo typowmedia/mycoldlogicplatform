@@ -8,6 +8,8 @@ import Timeoff from './Timeoff/Timeoff';
 import BonusRecognition from './BonusRecognition/BonusRecognition';
 import OpenPosition from './OpenPosition/OpenPosition';
 import SafeSite from './SafeSite/SafeSite';
+import MySchedule from './MySchedule/MySchedule';
+import BestSiteReport from './BestSiteReport/BestSiteReport';
 
 class Main extends Component {
   render(){
@@ -21,6 +23,8 @@ class Main extends Component {
             <Route path='/bonus-recognitions' render={() => <BonusRecognition {...this.props}/>} />
             <Route path='/open-positions' render={() => <OpenPosition {...this.props}/>} />
             <Route path='/safe-site-report' render={() => <SafeSite {...this.props}/>} />
+            <Route path='/my-schedule' render={() => <MySchedule {...this.props}/>} />
+            <Route path='/my-best-site-report' render={() => <BestSiteReport {...this.props}/>} />
           </div>
         </Router>
       </div>

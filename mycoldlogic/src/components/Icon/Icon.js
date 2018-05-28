@@ -38,7 +38,7 @@ const Icon = ( props ) => {
 
   }
   return (
-    <div style={{height: `${props.size}`, width: `${props.size}`}}>
+    <div className='Icon' style={{height: `${props.size}`, width: `${props.size}`}}>
         {icon}
     </div>
   )

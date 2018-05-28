@@ -51,11 +51,11 @@
 .UserMenu a:hover,a:focus,a:active{
   background-color: #F16C20;
 }
-/* .UserMenu svg {
+.UserMenu svg {
   width: 20%;
   height: auto;
   margin-right: 18px;
-} */
+}
 
 #logoutBtn {
   cursor: pointer;
