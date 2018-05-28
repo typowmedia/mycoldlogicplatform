@@ -1,5 +1,5 @@
 import React from 'react';
-import Subtitle from '../../../components/Subtitle/Subtitle';
+import Subtitle from '../../../components/UI/Subtitle/Subtitle';
 import './RequestPassword.css';
 
 const RequestPassword = props => {
