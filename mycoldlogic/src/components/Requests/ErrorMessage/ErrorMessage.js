@@ -4,7 +4,7 @@ import './ErrorMessage.css'
 const ErrorMessage = ( props ) => {
   return (
     <div className='ErrorMessage'>
-      {props.message}
+      <p>{props.message}</p>
       <button onClick={props.clicked}>X</button>
     </div>
   );

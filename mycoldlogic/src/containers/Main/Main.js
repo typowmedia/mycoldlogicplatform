@@ -24,7 +24,7 @@ class Main extends Component {
             <Route path='/open-positions' render={() => <OpenPosition {...this.props}/>} />
             <Route path='/safe-site-report' render={() => <SafeSite {...this.props}/>} />
             <Route path='/my-schedule' render={() => <MySchedule {...this.props}/>} />
-            <Route path='/my-best-site-report' render={() => <BestSiteReport {...this.props}/>} />
+            <Route path='/best-site-report' render={() => <BestSiteReport {...this.props}/>} />
           </div>
         </Router>
       </div>

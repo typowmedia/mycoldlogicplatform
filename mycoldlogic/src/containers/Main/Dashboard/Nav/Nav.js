@@ -7,9 +7,9 @@ const Nav = ( props ) => {
     return <NavLink key={link} route={link} />
   });
     return(
-        <ul className='Nav'>
+        <div className='Nav'>
           {nav}
-        </ul>
+        </div>
     );
 };
 

@@ -8,7 +8,7 @@ class BestSiteReport extends Component {
   render(){
     return(
       <div className='BestSiteReport'>
-        <Subtitle icon='my-best-site-report' height='70px' title='Best Site Report'/>
+        <Subtitle icon='best-site-report' height='70px' title='Best Site Report'/>
         <BackToDashboard />
       </div>
     );
