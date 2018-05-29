@@ -26,9 +26,6 @@
 }
 /* smart watches (just in case) */
 @media screen and (min-device-width: 150px)and (max-width: 330px){
-  .Header {
-    display: none;
-  }
 }
 /* phones less than 600px wide*/
 @media screen and (min-device-width: 330px)and (max-width: 600px){
