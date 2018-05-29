@@ -2,8 +2,7 @@ import React from 'react';
 import './Icon.css';
 
 import TimeOffIcon from '../../assets/TimeOffIcon';
-//import BestSiteIcon from '../../assets/MyBestSiteIcon';
-import BestSiteIcon from '../../assets/ExitIcon';
+import BestSiteIcon from '../../assets/MyBestSiteIcon';
 import OpenPositionIcon from '../../assets/OpenPositionIcon';
 import SafeSiteIcon from '../../assets/SafeSiteIcon';
 import BonusRecognitionsIcon from '../../assets/BonusRecognitionsIcon';

@@ -1,18 +1,10 @@
 import React from 'react';
 
 const MyBestSiteIcon = (props) => {
-    return <svg  xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
-                viewBox="0 173 125 125">
-        <defs>
-            <clipPath id="b">
-                <rect y="173" width="125" height="125"/>
-            </clipPath>
-        </defs>
-        <g id="bestsitesvg" clipPath="url(#b)">
-            <path
-                d="M64.438,2A62.5,62.5,0,1,0,127,64.5,62.429,62.429,0,0,0,64.438,2ZM64.5,114.5a50,50,0,1,1,50-50A49.986,49.986,0,0,1,64.5,114.5Zm6.25-62.875,6.625,6.625L84,51.625l6.625,6.625,6.625-6.625L84,38.375Zm-25.75,0,6.625,6.625,6.625-6.625L45,38.375,31.75,51.625l6.625,6.625Zm19.5,47.25A34.352,34.352,0,0,0,96.438,77H32.563A34.351,34.351,0,0,0,64.5,98.875Z"
-                transform="translate(-2 171)" fill={props.color}/>
-        </g>
+    return <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <title>MyBestSiteIcon</title>
+        <path
+              d="M50,0a49.94,49.94,0,1,0,.16,0Zm0,90A40,40,0,1,1,90,50,40,40,0,0,1,50,90Zm5-50.3L60.3,45l5.3-5.3L70.9,45l5.3-5.3L65.6,29.1Zm-20.6,0L39.7,45,45,39.7,34.4,29.1,23.8,39.7,29.1,45ZM50,77.5A27.48,27.48,0,0,0,75.55,60H24.45A27.48,27.48,0,0,0,50,77.5Z" fill={props.color}/>
     </svg>
 };
 
