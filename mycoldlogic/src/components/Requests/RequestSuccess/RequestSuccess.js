@@ -9,7 +9,7 @@ const RequestSuccess = ( props ) => {
         {props.successMessage}
       </p>
       <div>
-        <button onClick={props.clicked}>Submit another request</button>
+        <button onClick={props.clicked} className='anotherRequestBtn'>Submit new request</button>
         <BackToDashboard />
       </div>
     </div>

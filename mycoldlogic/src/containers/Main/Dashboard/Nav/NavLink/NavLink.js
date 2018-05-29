@@ -13,7 +13,7 @@ const NavLink = ( props ) => {
     break;
     case 'my-schedule': name = 'My Schedule';
     break;
-    case 'my-best-site-report': name = 'My Best Site Report';
+    case 'best-site-report': name = 'My Best Site Report';
     break;
     case 'safe-site-report': name = 'Safe Site Report';
     break;

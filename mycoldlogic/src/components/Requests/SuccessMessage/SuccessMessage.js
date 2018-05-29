@@ -4,7 +4,7 @@ import './SuccessMessage.css'
 const SuccessMessage = ( props ) => {
   return (
     <div className='SuccessMessage'>
-      {props.message}
+      <p>{props.message}</p>
       <button onClick={props.clicked}>X</button>
     </div>
   );

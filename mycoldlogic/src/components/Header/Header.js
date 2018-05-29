@@ -3,6 +3,7 @@ import './Header.css';
 import UserMenu from '../Navigation/UserMenu/UserMenu';
 import ColdLogicLogo from "../../assets/ColdLogicLogo";
 import Wrapper from '../../hoc/Wrapper/Wrapper';
+import { NavLink } from 'react-router-dom';
 
 const Header = props => {
   let header = <h2>Welcome to My ColdLogic</h2>;
@@ -16,7 +17,7 @@ const Header = props => {
         </p>
         <div className='Header-manager'></div>
         </div>
-        <ColdLogicLogo color={'#fff'} className="header-logo"/>
+        <NavLink to='/' style={{height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}} activeStyle={{ backgroundColor: 'transparent' }}><ColdLogicLogo color={'#fff'}/></NavLink>
       </Wrapper>
       )
   }

@@ -18,7 +18,7 @@ class App extends Component {
         'timeoff',
         'bonus-recognitions',
         'my-schedule',
-        'my-best-site-report',
+        'best-site-report',
         'safe-site-report',
         'open-positions'
       ],

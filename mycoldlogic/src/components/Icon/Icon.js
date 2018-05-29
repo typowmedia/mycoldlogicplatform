@@ -2,7 +2,8 @@ import React from 'react';
 import './Icon.css';
 
 import TimeOffIcon from '../../assets/TimeOffIcon';
-import BestSiteIcon from '../../assets/MyBestSiteIcon';
+//import BestSiteIcon from '../../assets/MyBestSiteIcon';
+import BestSiteIcon from '../../assets/ExitIcon';
 import OpenPositionIcon from '../../assets/OpenPositionIcon';
 import SafeSiteIcon from '../../assets/SafeSiteIcon';
 import BonusRecognitionsIcon from '../../assets/BonusRecognitionsIcon';
@@ -22,7 +23,7 @@ const Icon = ( props ) => {
     case 'my-schedule':
       icon = <ScheduleIcon color={props.color} />;
       break;
-    case 'my-best-site-report':
+    case 'best-site-report':
       icon = <BestSiteIcon color={props.color} />;
       break;
     case 'safe-site-report':

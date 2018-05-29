@@ -16,12 +16,15 @@
   position: relative;
   transition-property: color;
   transition-duration: 0.3s;
-  padding: 8px 8% 8px 8%;
+  padding: 12px 14px;
+  font-size: 1.3rem;
   border-radius: 8px;
   border: none;
   background: #F16C20;
   color: #ffffff;
   overflow: hidden;
+  margin-left: 10px;
+  box-shadow: 1px 1px 3px #000;
 }
 .App .mainBtn:hover{
   cursor: pointer;
@@ -29,6 +32,35 @@
 .App .mainBtn:hover:before{
   transform: scaleX(1);
 }
+
+.App .anotherRequestBtn{
+  position: relative;
+  display: inline-block;
+  padding: 12px 16px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  border: none;
+  background: #F16C20;
+  color: #fff;
+  transition: all ease 0.3s;
+  box-shadow: 1px 1px 3px #000;
+}
+  .App .anotherRequestBtn:hover{
+    padding: 12px 4px 12px 28px;
+  }
+  .App .anotherRequestBtn:after{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    content: '<<';
+    color: #0D3C55;
+    transition: all ease 0.3s;
+    opacity: 0;
+  }
+  .App .anotherRequestBtn:hover:after{
+    left: 3px;
+    opacity: 1;
+  }
 /* .flex-container{
   position: relative;
   top: 0;
