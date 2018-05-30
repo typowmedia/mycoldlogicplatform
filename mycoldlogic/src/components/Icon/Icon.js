@@ -5,7 +5,7 @@ import TimeOffIcon from '../../assets/TimeOffIcon';
 import BestSiteIcon from '../../assets/MyBestSiteIcon';
 import OpenPositionIcon from '../../assets/OpenPositionIcon';
 import SafeSiteIcon from '../../assets/SafeSiteIcon';
-import BonusRecognitionsIcon from '../../assets/BonusRecognitionsIcon';
+import BonusRecognitionIcon from '../../assets/BonusRecognitionIcon';
 import ScheduleIcon from '../../assets/ScheduleIcon';
 import RequestPasswordIcon from '../../assets/RequestPasswordIcon';
 
@@ -17,7 +17,7 @@ const Icon = ( props ) => {
       icon = <TimeOffIcon color={props.color}/>;
       break;
     case 'bonus-recognitions':
-      icon = <BonusRecognitionsIcon color={props.color} />;
+      icon = <BonusRecognitionIcon color={props.color} />;
       break;
     case 'my-schedule':
       icon = <ScheduleIcon color={props.color} />;
