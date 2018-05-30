@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import './Timeoff.css';
+
 import TimeoffRequestForm from './TimeoffRequestForm/TimeoffRequestForm';
 import RequestSuccess from '../../../components/Requests/RequestSuccess/RequestSuccess';
 import Subtitle from '../../../components/UI/Subtitle/Subtitle';
-import './Timeoff.css';
+import Spinner from '../../../components/UI/Spinner/Spinner';
+import ErrorMessage from '../../../components/Requests/ErrorMessage/ErrorMessage';
+
 import { errorCheck } from '../../../utilities/errorCheck';
+import axios from 'axios';
 
 
 class Timeoff extends Component {
@@ -16,7 +21,9 @@ class Timeoff extends Component {
       toDate: '',
       fromDate: '',
       requestSubmitted: false,
-      error: ''
+      error: '',
+      timeOffReasons: null,
+      loading: true
     };
   }
   submitAnotherTimeoffRequest = () => {
@@ -65,36 +72,51 @@ class Timeoff extends Component {
       this.setState(prevState => ({requestSubmitted: !prevState.requestSubmitted, error: ''}))
     }
   };
+
+
   render(){
+    let timeOff = <Spinner />
+    if (!this.state.loading) {
+      timeOff = (
+        <TimeoffRequestForm
+          errorMessage={this.state.error}
+          updateReason={this.updateReason}
+          fromDate={this.updateFromDate}
+          toDate={this.updateToDate}
+          updateMessage={this.updateMessage}
+          submitTimeoffRequest={this.submitTimeoffRequest}
+          message={this.state.message}
+          closeError={this.closeError}
+        />
+      )
+    if (this.state.requestSubmitted) {
+      timeOff = (
+        <RequestSuccess
+          successMessage='Thank you for submitting your time off request through your ColdLogic portal. One of your managers will review the request and get back to you soon with an answer.'
+          clicked={this.submitAnotherTimeoffRequest}
+          />
+      )
+    }
+    }
     return(
       <div className='Timeoff'>
-        <Subtitle height='70px' icon={this.props.navLinks[0]} title='Time Off Request' />
-        {
-          this.state.requestSubmitted
-          ?
-          (
-            <RequestSuccess
-              successMessage='Thank you for submitting your time off request through your ColdLogic portal. One of your managers will review the request and get back to you soon with an answer.'
-              clicked={this.submitAnotherTimeoffRequest}
-              />
-          )
-          :
-          (
-            <TimeoffRequestForm
-              errorMessage={this.state.error}
-              updateReason={this.updateReason}
-              fromDate={this.updateFromDate}
-              toDate={this.updateToDate}
-              updateMessage={this.updateMessage}
-              submitTimeoffRequest={this.submitTimeoffRequest}
-              message={this.state.message}
-              closeError={this.closeError}
-            />
-          )
-        }
+      <div className='Timeoff-subtitle'>
+        <Subtitle height='70px' icon={'timeoff'} title='Time Off Request' />
+        <div className='Timeoff-error'>{this.state.error ? <ErrorMessage message={this.state.error.message} clicked={this.closeError}/> : null}</div>
+      </div>
+        {timeOff}
       </div>
     );
   }
+
+  // LIFECYCLES
+  componentDidMount(){
+    axios.get('/TimeOffReasons')
+      .then(results => {
+        this.setState({timeOffReasons: results.data, loading: false});
+      });
+  }
+
 }
 
 export default Timeoff;

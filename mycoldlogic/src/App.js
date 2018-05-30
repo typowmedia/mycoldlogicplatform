@@ -27,7 +27,7 @@ class App extends Component {
     };
   }
   componentDidMount() {
-    axios.get('http://mycoldlogicca.azurewebsites.net/api/Associates/1')
+    axios.get('/Associates/1')
       .then(res => console.log('[Login] :', res.data));
   }
 

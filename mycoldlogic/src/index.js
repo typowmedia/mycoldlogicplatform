@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import axios from 'axios';
+
+axios.defaults.baseURL = 'http://mycoldlogicca.azurewebsites.net/api';
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

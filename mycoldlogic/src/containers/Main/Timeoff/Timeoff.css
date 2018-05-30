@@ -1,8 +1,18 @@
 .Timeoff{
+  width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
+}
+.Timeoff-subtitle{
+  width: 100%;
+  position: relative;
+}
+.Timeoff-subtitle .Timeoff-error{
+  width: 32vmax;
+  margin: 0 auto;
+  position: relative;
 }
 /* smart watches (just in case) */
 @media screen and (min-device-width: 150px)and (max-width: 330px) {
