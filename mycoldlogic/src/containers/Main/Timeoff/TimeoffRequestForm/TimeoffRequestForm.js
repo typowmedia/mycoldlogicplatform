@@ -1,11 +1,9 @@
 import React from 'react';
 import './TimeoffRequestForm.css';
-import ErrorMessage from '../../../../components/Requests/ErrorMessage/ErrorMessage';
 
 const TimeoffRequestForm = ( props ) => {
   return (
-    <div>
-      {props.errorMessage ? <ErrorMessage message={props.errorMessage.message} clicked={props.closeError}/> : null}
+    <div className='TimeoffRequest'>
       <form className='TimeoffRequestForm'>
         <div className='pickdate'>
           <label htmlFor='fromDate'>From</label>

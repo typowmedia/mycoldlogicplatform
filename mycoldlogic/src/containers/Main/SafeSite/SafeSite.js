@@ -114,6 +114,7 @@ class SafeSite extends Component {
           <Subtitle
             title='Safe Site Report'
             icon='safe-site-report'
+            height='70px'
             />
           {safeSite}
         </div>
