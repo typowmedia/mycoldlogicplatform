@@ -7,7 +7,7 @@ import Subtitle from '../../../components/UI/Subtitle/Subtitle';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import ErrorMessage from '../../../components/Requests/ErrorMessage/ErrorMessage';
 
-import { errorCheck } from '../../../utilities/errorCheck';
+import { errorCheck, dateCheck } from '../../../utilities/errorCheck';
 import axios from 'axios';
 
 
@@ -26,53 +26,14 @@ class Timeoff extends Component {
       loading: true
     };
   }
-  submitAnotherTimeoffRequest = () => {
-    this.setState(prevState => ({
-      requestSubmitted: !prevState.requestSubmitted,
-      reason: '',
-      message: '',
-      toDate: '',
-      fromDate: '',
-      error: ''
-    }))
-  };
-  updateReason = (event) => {
-    this.setState({reason: event.target.value, error: ''});
-  };
-  updateFromDate = (event) => {
-    this.setState({fromDate: event.target.value, error: ''});
-  };
-  updateToDate = (event) => {
-    this.setState({toDate: event.target.value, error: ''});
-  };
-  updateMessage = (event) => {
-    this.setState({message: event.target.value, error: ''});
-  };
-  closeError = () => {
-    this.setState({error: ''});
-  };
-  submitTimeoffRequest = (event) => {
-    event.preventDefault();
-    let error;
-    event.preventDefault();
-    if (this.state.fromDate === '') {
-      error = errorCheck('fromDate')
-    } else if (this.state.toDate === '') {
-      error = errorCheck('toDate')
-    } else if (this.state.reason === '') {
-      error = errorCheck('reason')
-    } else if (this.state.message === '') {
-      error = errorCheck('message')
-    };;
-    if (error) {
-      this.setState({error: error});
-    } else {
-      // SEND MESSAGE
-      console.log(this.state.reason, this.state.toDate, this.state.fromDate, this.state.message);
-      this.setState(prevState => ({requestSubmitted: !prevState.requestSubmitted, error: ''}))
-    }
-  };
 
+  // LIFECYCLES
+  componentDidMount(){
+    axios.get('/TimeOffReasons')
+      .then(results => {
+        this.setState({timeOffReasons: results.data, loading: false});
+      });
+  }
 
   render(){
     let timeOff = <Spinner />
@@ -81,6 +42,7 @@ class Timeoff extends Component {
         <TimeoffRequestForm
           errorMessage={this.state.error}
           updateReason={this.updateReason}
+          timeoffReasons={this.state.timeOffReasons}
           fromDate={this.updateFromDate}
           toDate={this.updateToDate}
           updateMessage={this.updateMessage}
@@ -109,14 +71,54 @@ class Timeoff extends Component {
     );
   }
 
-  // LIFECYCLES
-  componentDidMount(){
-    axios.get('/TimeOffReasons')
-      .then(results => {
-        this.setState({timeOffReasons: results.data, loading: false});
-      });
-  }
 
+  submitAnotherTimeoffRequest = () => {
+    this.setState(prevState => ({
+      requestSubmitted: !prevState.requestSubmitted,
+      reason: '',
+      message: '',
+      toDate: '',
+      fromDate: '',
+      error: ''
+    }))
+  };
+  updateReason = (event) => {
+    this.setState({reason: event.target.value, error: ''});
+  };
+  updateFromDate = (event) => {
+    this.setState({fromDate: event.target.value, error: ''});
+  };
+  updateToDate = (event) => {
+    this.setState({toDate: event.target.value, error: ''});
+  };
+  updateMessage = (event) => {
+    this.setState({message: event.target.value, error: ''});
+  };
+  closeError = () => {
+    this.setState({error: ''});
+  };
+  submitTimeoffRequest = (event) => {
+    event.preventDefault();
+    let error;
+    if (this.state.fromDate === '') {
+      error = errorCheck('fromDate')
+    } else if (this.state.toDate === '') {
+      error = errorCheck('toDate')
+    } else if (this.state.reason === '') {
+      error = errorCheck('reason')
+    } else if (this.state.message === '') {
+      error = errorCheck('message')
+    } else if (this.state.fromDate || this.state.toDate) {
+      error = dateCheck(this.state.fromDate, this.state.toDate);
+    };
+    if (error) {
+      this.setState({error: error});
+    } else {
+      // SEND MESSAGE
+      console.log(this.state.reason, this.state.toDate, this.state.fromDate, this.state.message);
+      this.setState(prevState => ({requestSubmitted: !prevState.requestSubmitted, error: ''}))
+    }
+  };
 }
 
 export default Timeoff;
