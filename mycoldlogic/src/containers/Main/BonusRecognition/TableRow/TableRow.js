@@ -1,7 +1,6 @@
 import React from 'react';
 
 const TableRow = ( props ) => {
-  console.log(props.recognition);
   let wkEndDate = new Date(props.recognition.wkEndDate);
   return (
     <tr>
