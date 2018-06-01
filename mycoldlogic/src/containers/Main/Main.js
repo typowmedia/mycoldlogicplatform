@@ -10,11 +10,12 @@ import OpenPosition from './OpenPosition/OpenPosition';
 import SafeSite from './SafeSite/SafeSite';
 import MySchedule from './MySchedule/MySchedule';
 import BestSiteReport from './BestSiteReport/BestSiteReport';
+import './Main.css';
 
 class Main extends Component {
   render(){
     return(
-      <div>
+      <div className='Main'>
         <Router>
           <div>
             <Header {...this.props} />

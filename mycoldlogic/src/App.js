@@ -27,8 +27,10 @@ class App extends Component {
     };
   }
   componentDidMount() {
-    axios.get('/Associates/1')
-      .then(res => console.log('[Login] :', res.data));
+    axios.get('/Employees/2')
+      .then(res => {
+        this.setState({user: res.data});
+      });
   }
 
   logUserIn = (user) => {

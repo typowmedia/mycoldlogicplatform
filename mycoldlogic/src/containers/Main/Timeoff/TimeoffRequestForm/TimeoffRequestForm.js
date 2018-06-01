@@ -2,6 +2,9 @@ import React from 'react';
 import './TimeoffRequestForm.css';
 
 const TimeoffRequestForm = ( props ) => {
+  let timeoffReasons = props.timeoffReasons.map(reason => {
+    return <option key={reason.id} value={reason.name}>{reason.name}</option>;
+  });
   return (
     <div className='TimeoffRequest'>
       <form className='TimeoffRequestForm'>
@@ -28,10 +31,7 @@ const TimeoffRequestForm = ( props ) => {
             onChange={props.updateReason}
             name='reason'>
             <option value=''>Select a Reason</option>
-            <option value='Vacation'>Vacation</option>
-            <option value='Unpaid Vacation'>Unpaid Vacation</option>
-            <option value='Appointment'>Appointment</option>
-            <option value='Other'>Other</option>
+            {timeoffReasons}
           </select>
         </div>
         <div className="reasontextarea">

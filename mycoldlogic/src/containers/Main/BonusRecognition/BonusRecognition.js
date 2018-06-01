@@ -31,7 +31,6 @@ class BonusRecognition extends Component {
 
 
   render(){
-    console.log(this.state.recognitions);
     const recognitions = this.state.recognitions.map(week => {
       return <TableRow key={week.id} recognition={week} />
     });
@@ -63,7 +62,7 @@ class BonusRecognition extends Component {
           height='70px'
           title='Bonus Recognitions'
           />
-        <p>Hi {this.props.user.firstName}, your bonus recognition for the next weeks are:</p>
+        <p>Hi {this.props.user.firstName}, your bonus recognitions for the next weeks are:</p>
         {recognitionTable}
         <BackToDashboard />
       </div>
