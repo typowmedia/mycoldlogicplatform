@@ -32,14 +32,14 @@ class UserMenu extends Component {
           <i className="fas fa-bars"></i>
         </button>
         <ul style={this.state.toggleMenu ? slide : null}>
-          <li><Link to='/' onClick={this.toggleMenu}><DashboardIcon color={"#fff"}/>Dashboard</Link></li>
-          <li><Link to='/my-schedule' onClick={this.toggleMenu}><ScheduleIcon color={'#FFF'}/>My Schedule</Link></li>
-          <li><Link to='/timeoff' onClick={this.toggleMenu}><TimeOffIcon color={'#fff'}/>Request Timeoff</Link></li>
-          <li>
-          <button id='logoutBtn' onClick={this.props.logUserOut}>
-              <ExitIcon color={'#fff'} height={'5px'}/>LogOut
-          </button>
-          </li>
+          <Link className='UserMenu-drop-link' to='/' onClick={this.toggleMenu}><DashboardIcon color={"#fff"}/>Dashboard</Link>
+          <Link className='UserMenu-drop-link' to='/my-schedule' onClick={this.toggleMenu}><ScheduleIcon color={'#FFF'}/>My Schedule</Link>
+          <Link className='UserMenu-drop-link' to='/timeoff' onClick={this.toggleMenu}><TimeOffIcon color={'#fff'}/>Request Timeoff</Link>
+          <div className='UserMenu-drop-link' onClick={this.props.logUserOut}>
+              <button id='logoutBtn'>
+                <ExitIcon color={'#fff'} height={'5px'}/>Log out
+              </button>
+          </div>
         </ul>
       </div>
     )
