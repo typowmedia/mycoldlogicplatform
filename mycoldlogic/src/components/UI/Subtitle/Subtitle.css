@@ -1,16 +1,14 @@
 .Subtitle{
   margin: 20px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 60%;
 }
-.Subtitle img{
-  flex: 2 0 0;
-  margin-right: auto;
+.Subtitle svg{
+  height: 90px;
 }
 .Subtitle h3{
-  width: 60%;
+  margin-left: 50px;
   text-align: center;
   font-size: 2rem;
   border-bottom: 3px solid #164055;
