@@ -5,7 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://mycoldlogicca-dev.azurewebsites.net/api';
+axios.defaults.baseURL = 'http://mycoldlogicca.azurewebsites.net/api';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

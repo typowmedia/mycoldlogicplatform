@@ -1,6 +1,10 @@
 .BonusRecognition{
   text-align: center;
 }
+.BonusRecognition p{
+  margin-top: 50px;
+  font-size: 1.2rem;
+}
 .BonusRecognition table{
   width: 85%;
   margin: 20px auto;
