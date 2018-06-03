@@ -3,7 +3,10 @@
   align-items: center;
   background: #0D3C55;
   color: #FFFFFF;
-  height: 10vh;
+  height: 60px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3px;
 }
 .Header h2{
   margin-left: 20px;

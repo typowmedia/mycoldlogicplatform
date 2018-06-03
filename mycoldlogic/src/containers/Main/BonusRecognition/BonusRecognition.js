@@ -5,7 +5,8 @@ import './BonusRecognition.css';
 import Subtitle from '../../../components/UI/Subtitle/Subtitle';
 import BackToDashboard from '../../../components/UI/BackToDashboard/BackToDashboard';
 import Spinner from '../../../components/UI/Spinner/Spinner';
-import TableRow from './TableRow/TableRow';
+import TableView from './TableView/TableView';
+import ListView from './ListView/ListView';
 
 class BonusRecognition extends Component {
   constructor(props) {
@@ -14,12 +15,16 @@ class BonusRecognition extends Component {
     this.state = {
       recognitions: [],
       loading: true,
-      error: false
+      error: false,
+      mobileVersion: false
     };
   }
 
   componentDidMount(){
-    axios.get('http://mycoldlogicca.azurewebsites.net/api/Incentives/EpIncentives/1')
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions.bind(this));
+
+    axios.get('/EpIncentives/1')
     .then(res => {
       const recognitions = [res.data];
       this.setState({recognitions: recognitions, loading: false});
@@ -29,43 +34,60 @@ class BonusRecognition extends Component {
     });
   }
 
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions.bind(this));
+  }
+
+
+  updateDimensions() {
+    if(window.innerWidth < 900) {
+      if (!this.state.mobileVersion) {
+        this.setState({mobileVersion: true});
+      }
+    }
+    if (window.innerWidth > 900) {
+      if (this.state.mobileVersion) {
+        this.setState({mobileVersion: false})
+      }
+    }
+  }
+
 
   render(){
-    const recognitions = this.state.recognitions.map(week => {
-      return <TableRow key={week.id} recognition={week} />
-    });
 
-    let recognitionTable = (
-      <table>
-        <thead>
-          <tr>
-            <th>Week Ending Date</th>
-            <th>Daily Incentives</th>
-            <th>Weekly Incentives</th>
-            <th>Gross Incentives</th>
-            <th>BBS Factor</th>
-            <th>Net Incentives</th>
-          </tr>
-        </thead>
-        <tbody>
-          {recognitions}
-        </tbody>
-      </table>
-    );
-    if (this.state.loading) {
-      recognitionTable = <Spinner />
+    let recognitionTable = <TableView recognitions={this.state.recognitions} />
+
+    if (this.state.mobileVersion) {
+
+      recognitionTable = <ListView recognitions={this.state.recognitions} />
+
     }
+
+    if (this.state.loading) {
+
+      recognitionTable = <Spinner />
+
+    }
+
     return(
+
       <div className='BonusRecognition'>
-        <Subtitle
+        <div>
+          <Subtitle
           icon='bonus-recognitions'
           height='70px'
           title='Bonus Recognitions'
           />
+        </div>
+
         <p>Hi {this.props.user.firstName}, your bonus recognitions for the next weeks are:</p>
+
         {recognitionTable}
+
         <BackToDashboard />
+
       </div>
+
     );
   }
 }

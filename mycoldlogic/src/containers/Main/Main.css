@@ -1,3 +1,7 @@
 .Main{
   height: 100%;
 }
+.Main-header{
+  width: 100%;
+  background: #0D3C55;
+}

@@ -63,7 +63,9 @@ class Login extends Component {
   render(){
     return(
       <div className="login">
-        <Header />
+        <div style={{width: '100%', background: '#0D3C55'}}>
+          <Header />
+        </div>
         {
           !this.state.requestPassword
           ? (
