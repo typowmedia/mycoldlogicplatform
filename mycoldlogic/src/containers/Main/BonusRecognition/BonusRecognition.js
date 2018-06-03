@@ -27,7 +27,12 @@ class BonusRecognition extends Component {
     .catch(err => {
       this.setState({error: true});
     });
+    window.on('resize', this.handleResize());
   }
+
+  handleResize = (event) => {
+    console.log(event);
+  };
 
 
   render(){
@@ -52,6 +57,13 @@ class BonusRecognition extends Component {
         </tbody>
       </table>
     );
+    if (this.state.mobileVersion) {
+      recognitionTable = (
+        <div>
+          Mobile Version
+        </div>
+      )
+    }
     if (this.state.loading) {
       recognitionTable = <Spinner />
     }
