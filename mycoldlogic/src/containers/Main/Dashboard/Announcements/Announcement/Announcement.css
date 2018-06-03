@@ -7,12 +7,16 @@
 }
 .Announcement-btn{
   position: absolute;
-  top: 0;
+  font-size: x-large;
+  font-weight: bold;
+  top: -10px;
   right: 0;
   background: none;
+  border-radius: 50%;
+  padding: 8px;
   border: none;
   margin-right: 5px;
-  color:#1395BA;
+  color: #ffffff;
 }
 .Announcement-padding-margin{
   padding: 5px;
