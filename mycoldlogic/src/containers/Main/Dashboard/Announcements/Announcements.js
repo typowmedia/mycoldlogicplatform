@@ -10,6 +10,7 @@ const Announcements = ( props ) => {
         message='This is an important Announcement!'
         />
       <Announcement
+        clicked={props.showEvents}
         type='Upcoming Events'
         eventDate='DEC 01'
         event='Christmas BBQ Grab your hotdog!'
