@@ -15,7 +15,7 @@ const Announcement = ( props ) => {
       );
     }
   return (
-    <div className='Announcement'>
+    <div className='Announcement' onClick={props.clicked}>
       <button className='Announcement-btn'>x</button>
       <p className='Announcement-padding-margin'>{props.type}</p>
       {content}

@@ -1,4 +1,5 @@
 .Dashboard-flex-container {
+  position: relative;
   width: 90%;
   margin: 8px auto;
   display: flex;
