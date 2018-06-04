@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
+import { errorCheck } from '../../../utilities/errorCheck';
+import ErrorMessage from '../../../components/Requests/ErrorMessage/ErrorMessage';
 import './OpenPosition.css';
 import Subtitle from '../../../components/UI/Subtitle/Subtitle';
 import BackToDashboard from '../../../components/UI/BackToDashboard/BackToDashboard';
@@ -27,30 +30,115 @@ class OpenPosition extends Component {
 
     this.state = {
       step: 0,
-    };
+      openPositions: [
+        {
+          id: 0,
+          position: 'Selector 1'
+        },
+        {
+          id: 1,
+          position: 'Selector 2'
+        },
+        {
+          id: 2,
+          position: 'Forklift Operator'
+        },
+        {
+          id: 3,
+          position: 'Selector 1 - Night Shift'
+        },
+        {
+          id: 4,
+          position: 'Selector 2 - Day Shift'
+        },
+        {
+          id: 5,
+          position: 'Other amazing position'
+        },
+        {
+          id: 6,
+          position: 'Superman with kryptonite'
+        },
+        {
+          id: 7,
+          position: 'Amazing opportunity to advance'
+        }
+      ],
+      selectedPositions: []
+    }
   }
+  checkboxHandler = (event) => {
+    const id = event.target.id;
+    let selectedPositions = [...this.state.selectedPositions];
+    const openPositions = [...this.state.openPositions];
+    const selectedPosition = _.filter(openPositions, (position) => {
+      if (position.id === parseInt(id, 10)) {
+        return position;
+      }
+    })
+    if (_.includes(selectedPositions, selectedPosition[0])) {
+      selectedPositions = _.pull(selectedPositions, selectedPosition[0])
+    } else {
+      selectedPositions = [...selectedPositions, selectedPosition[0]]
+    }
+    this.setState({
+      selectedPositions: selectedPositions,
+      error: ''
+    });
+  };
 
   nextStep = () => {
-    this.setState(prevState => ({step: prevState.step + 1}));
-  };
+    let error;
+    const selectedPositions = this.state.selectedPositions;
+    if (selectedPositions.length === 0 || selectedPositions.length > 5) {
+      error = errorCheck('selectedPositions');
+    }
+    if (error) {
+      this.setState({error: error});
+    } else {
+      this.setState(prevState => ({step: prevState.step + 1}))
+    }
+  }
+
   lastStep = () => {
-    this.setState(prevState => ({step: prevState.step - 1}));
-  };
+    this.setState(prevState => ({step: prevState.step - 1}))
+  }
+
   submitBid = () => {
     console.log('SUBMITTED');
+  }
+
+  clearError = () => {
+    this.setState({error: ''});
   };
   render(){
-    let openPosition = <SelectPositions />
-    this.state.step === 1 ? openPosition = <SortPositions /> : null;
-    this.state.step === 2 ? openPosition = <SubmitPositions /> : null;
+    let openPosition = (
+      <SelectPositions
+        positions={this.state.openPositions}
+        changed={(event) => this.checkboxHandler(event)}
+        selected={this.state.selectedPositions}
+        />
+    )
+    openPosition = this.state.step === 1 ? <SortPositions /> : openPosition
+    openPosition = this.state.step === 2 ? <SubmitPositions /> : openPosition
+
 
     const backButton = this.state.step > 0
-    ? <button onClick={this.lastStep}>Go Back</button>
-    : <BackToDashboard />;
+    ? <button onClick={this.lastStep} className='mainBtn'>Go Back</button>
+    : <BackToDashboard />
 
     return(
       <div className='OpenPosition'>
-        <Subtitle icon='open-positions' title='Bid for open positions' height='70px'/>
+        <div>
+          <Subtitle icon='open-positions' title='Bid for open positions' height='70px'/>
+        </div>
+        <div className='OpenPosition-error'>
+        {
+          this.state.error
+          ? <ErrorMessage message={this.state.error.message} clicked={this.clearError}/>
+          : null
+        }
+        </div>
         <div>
           <h1>Step: {stepList[this.state.step].step}</h1>
           <p>{stepList[this.state.step].instructions}</p>
@@ -59,6 +147,7 @@ class OpenPosition extends Component {
         <div>
           {backButton}
           <button
+            className='mainBtn'
             onClick={
               this.state.step === 2
               ? this.submitBid
@@ -70,7 +159,7 @@ class OpenPosition extends Component {
           </button>
         </div>
       </div>
-    );
+    )
   }
 }
 

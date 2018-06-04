@@ -83,10 +83,12 @@ class AskManagerForm extends Component {
         {
           this.state.error.type
           ? (
-            <ErrorMessage
+            <div style={{position: 'absolute'}}>
+              <ErrorMessage
               message={this.state.error.message}
               clicked={() => this.setState({error: ''})}
               />
+            </div>
           )
           : null
         }
