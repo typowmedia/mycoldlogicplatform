@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #1395BA;
-  height: 20vh;
+  height: 100%;
 }
 /* phones bigger than 600px & less than 768px wide*/
 @media screen and (max-width: 768px){
