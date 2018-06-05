@@ -1,24 +1,22 @@
 .App {
   height: 100vh;
 }
-.App .mainBtn:before{
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #0D3C55;
-  transform: scaleX(0);
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in;
-}
+/*.App .mainBtn:before{*/
+  /*content: "";*/
+  /*position: absolute;*/
+  /*z-index: -1;*/
+  /*outline: none;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  /*background: #F1872E;*/
+  /*transform: scaleX(0);*/
+  /*transition-duration: 0.2s;*/
+  /*transition-timing-function: ease-in;*/
+/*}*/
 .App .mainBtn{
-  transform: translateZ(0);
   position: relative;
-  transition-property: color;
-  transition-duration: 0.3s;
   padding: 12px 14px;
   font-size: 1.3rem;
   border-radius: 8px;
@@ -31,9 +29,12 @@
 }
 .App .mainBtn:hover{
   cursor: pointer;
+  background: #F1872E;
 }
-.App .mainBtn:hover:before{
-  transform: scaleX(1);
+.App .mainBtn:active{
+  background: #F1872E;
+  box-shadow: 0 3px #e2e2e2;
+  transform: translateY(2px);
 }
 
 .App .anotherRequestBtn{
