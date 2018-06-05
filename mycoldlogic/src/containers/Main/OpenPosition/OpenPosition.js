@@ -119,7 +119,7 @@ class OpenPosition extends Component {
         selected={this.state.selectedPositions}
         />
     )
-    openPosition = this.state.step === 1 ? <SortPositions /> : openPosition
+    openPosition = this.state.step === 1 ? <SortPositions selected={this.state.selectedPositions}/> : openPosition
     openPosition = this.state.step === 2 ? <SubmitPositions /> : openPosition
 
 
