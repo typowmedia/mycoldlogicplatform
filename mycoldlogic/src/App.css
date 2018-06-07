@@ -57,7 +57,8 @@
     top: 25%;
     left: 0;
     content: '<<';
-    color: #0D3C55;
+    color: #FFFFFF;
+    font-weight: bold;
     transition: all ease 0.3s;
     opacity: 0;
   }
