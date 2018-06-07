@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e111c6d-3269-4cc9-ae2b-8ba5e78f7d79" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.css" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,22 +30,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SafeSite.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SafeSite.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="672">
+              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SafeSite.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SafeSite.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+            <state relative-caret-position="273">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SafeSiteForm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackToDashboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/UI/BackToDashboard/BackToDashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="85" lean-forward="true" selection-start-line="5" selection-start-column="85" selection-end-line="5" selection-end-column="89" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,9 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Login/LoginForm/LoginForm.js" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Login/RequestPassword/RequestPassword.css" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Timeoff/Timeoff.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSiteForm/SafeSiteForm.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/OpenPosition/OpenPosition.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/BonusRecognition/BonusRecognition.css" />
@@ -116,7 +138,10 @@
         <option value="$PROJECT_DIR$/mycoldlogic/src/App.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/Dashboard/Nav/NavLink/NavLink.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/BestSiteReport/BestSiteReport.css" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.js" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.css" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.js" />
       </list>
     </option>
   </component>
@@ -184,7 +209,7 @@
               <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
@@ -193,6 +218,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
+              <item name="BestSiteReport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mycoldlogicplatform" type="462c0819:PsiDirectoryNode" />
+              <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+              <item name="BestSiteReport" type="462c0819:PsiDirectoryNode" />
+              <item name="BestSiteForm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
@@ -276,12 +312,12 @@
       <workItem from="1526445431808" duration="3674000" />
       <workItem from="1526498459615" duration="30973000" />
       <workItem from="1527055452159" duration="9412000" />
-      <workItem from="1528226053685" duration="8673000" />
+      <workItem from="1528226053685" duration="9348000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130365000" />
+    <option name="totallyTimeSpent" value="131040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3833" y="-7" width="854" height="1318" extended-state="6" />
@@ -318,11 +354,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/BurgerIcon/BurgerIcon.css" />
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/BurgerIcon/BurgerIcon.js" />
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Dashboard/Dashboard.css" />
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Timeoff/Timeoff.css" />
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Timeoff/Timeoff.js" />
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/ErrorMessage/ErrorMessage.js" />
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Timeoff/TimeoffRequestForm/TimeoffRequestForm.js" />
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Timeoff/TimeoffRequestForm/TimeoffRequestForm.css" />
@@ -519,20 +550,59 @@
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/BestSiteReport/BestSiteForm/BestSiteForm.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.js">
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/UI/BackToDashboard/BackToDashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+        <state relative-caret-position="105">
+          <caret line="5" column="85" lean-forward="true" selection-start-line="5" selection-start-column="85" selection-end-line="5" selection-end-column="89" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/TimeoffRequestForm/TimeoffRequestForm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/BestSiteReport/BestSiteForm/BestSiteForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="672">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

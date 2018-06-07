@@ -6,7 +6,7 @@ const SafeSiteForm = ( props ) => {
   return (
     <div>
       {props.errorMessage ? <ErrorMessage message={props.errorMessage.message} clicked={props.closeError}/> : null}
-      <form>
+      <form className="SafeSiteForm">
         <div>
           When did it happen?
           <input
@@ -36,7 +36,7 @@ const SafeSiteForm = ( props ) => {
         </div>
         <div>
           <BackToDashboard />
-          <button onClick={props.submitForm}>Submit</button>
+          <button onClick={props.submitForm} className="mainBtn">Submit</button>
         </div>
       </form>
     </div>
