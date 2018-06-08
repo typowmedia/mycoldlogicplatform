@@ -11,9 +11,8 @@
 }
 .pickdate {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: larger;
-    margin: 30px 0 0 0;
 }
 
 .pickdate input {

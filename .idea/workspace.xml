@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e111c6d-3269-4cc9-ae2b-8ba5e78f7d79" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/assets/tempwarehousephoto.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.css" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.js" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/TimeoffRequestForm/TimeoffRequestForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/TimeoffRequestForm/TimeoffRequestForm.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,41 +20,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BestSiteReport.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/BestSiteReport/BestSiteReport.css">
+      <file leaf-file-name="Timeoff.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/Timeoff.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="252">
+              <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SafeSite.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.css">
+      <file leaf-file-name="TimeoffRequestForm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/TimeoffRequestForm/TimeoffRequestForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SafeSite.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SafeSiteForm.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state>
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -64,14 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BackToDashboard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/UI/BackToDashboard/BackToDashboard.js">
+      <file leaf-file-name="TimeoffRequestForm.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/TimeoffRequestForm/TimeoffRequestForm.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="85" lean-forward="true" selection-start-line="5" selection-start-column="85" selection-end-line="5" selection-end-column="89" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="651">
+              <caret line="41" selection-start-line="41" selection-end-line="41" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -97,7 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/SafeSite/SafeSiteForm/SafeSiteForm.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/OpenPosition/OpenPosition.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/BonusRecognition/BonusRecognition.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/components/Subtitle/Subtitle.css" />
@@ -146,8 +118,9 @@
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/BestSiteReport/BestSiteReport.css" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.css" />
-        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.js" />
         <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.css" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.js" />
+        <option value="$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/TimeoffRequestForm/TimeoffRequestForm.css" />
       </list>
     </option>
   </component>
@@ -231,7 +204,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
-              <item name="BestSiteReport" type="462c0819:PsiDirectoryNode" />
+              <item name="Timeoff" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
@@ -240,27 +213,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
-              <item name="BestSiteReport" type="462c0819:PsiDirectoryNode" />
-              <item name="BestSiteForm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mycoldlogicplatform" type="462c0819:PsiDirectoryNode" />
-              <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-              <item name="SafeSite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mycoldlogicplatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mycoldlogicplatform" type="462c0819:PsiDirectoryNode" />
-              <item name="mycoldlogic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-              <item name="SafeSite" type="462c0819:PsiDirectoryNode" />
-              <item name="SafeSiteForm" type="462c0819:PsiDirectoryNode" />
+              <item name="Timeoff" type="462c0819:PsiDirectoryNode" />
+              <item name="TimeoffRequestForm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,12 +279,12 @@
       <workItem from="1526445431808" duration="3674000" />
       <workItem from="1526498459615" duration="30973000" />
       <workItem from="1527055452159" duration="9412000" />
-      <workItem from="1528226053685" duration="9942000" />
+      <workItem from="1528226053685" duration="10288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131634000" />
+    <option name="totallyTimeSpent" value="131980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3833" y="-7" width="854" height="1318" extended-state="6" />
@@ -367,9 +321,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/ErrorMessage/ErrorMessage.js" />
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Timeoff/TimeoffRequestForm/TimeoffRequestForm.js" />
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Timeoff/TimeoffRequestForm/TimeoffRequestForm.css" />
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/RequestSuccess/RequestSuccess.js" />
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/RequestSuccess/RequestSuccess.css" />
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Login/LoginForm/LoginForm.js">
@@ -553,32 +504,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/BestSiteReport/BestSiteReport.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/BestSiteReport/BestSiteForm/BestSiteForm.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/UI/BackToDashboard/BackToDashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="85" lean-forward="true" selection-start-line="5" selection-start-column="85" selection-end-line="5" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/TimeoffRequestForm/TimeoffRequestForm.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/BestSiteReport/BestSiteForm/BestSiteForm.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -592,6 +519,30 @@
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1660">
+          <caret line="83" column="6" lean-forward="true" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/BestSiteReport/BestSiteReport.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSiteForm/SafeSiteForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -602,20 +553,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.js">
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/components/UI/BackToDashboard/BackToDashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="105">
+          <caret line="5" column="85" lean-forward="true" selection-start-line="5" selection-start-column="85" selection-end-line="5" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/Timeoff.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/SafeSite/SafeSite.css">
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/Timeoff.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="252">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/TimeoffRequestForm/TimeoffRequestForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycoldlogic/src/containers/Main/Timeoff/TimeoffRequestForm/TimeoffRequestForm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="41" selection-start-line="41" selection-end-line="41" selection-end-column="16" />
         </state>
       </provider>
     </entry>
