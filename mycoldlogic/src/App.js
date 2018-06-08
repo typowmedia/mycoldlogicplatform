@@ -34,9 +34,9 @@ class App extends Component {
   }
 
   logUserIn = (user) => {
-    this.setState({
-      isAuthenticated: true,
-      //user: user
+    axios.get('/Employees/2')
+    .then(res => {
+      this.setState({user: res.data, isAuthenticated: true});
     });
   }
 

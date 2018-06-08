@@ -32,35 +32,35 @@ class OpenPosition extends Component {
       step: 0,
       openPositions: [
         {
-          id: 0,
+          id: 123,
           position: 'Selector 1'
         },
         {
-          id: 1,
+          id: 142,
           position: 'Selector 2'
         },
         {
-          id: 2,
+          id: 2345,
           position: 'Forklift Operator'
         },
         {
-          id: 3,
+          id: 3435,
           position: 'Selector 1 - Night Shift'
         },
         {
-          id: 4,
+          id: 434534,
           position: 'Selector 2 - Day Shift'
         },
         {
-          id: 5,
+          id: 5543,
           position: 'Other amazing position'
         },
         {
-          id: 6,
+          id: 6435,
           position: 'Superman with kryptonite'
         },
         {
-          id: 7,
+          id: 75435,
           position: 'Amazing opportunity to advance'
         }
       ],
@@ -112,9 +112,27 @@ class OpenPosition extends Component {
     this.setState({error: ''});
   }
 
+  dragEnd = (event) => {
+    this.setState({targetbox: null})
+  }
   dragStart = (event) => {
-    console.log(event);
-    
+    event.dataTransfer.setData("text", event.target.id)
+    this.setState({targetbox: true})
+  }
+  drop = (event) => {
+    if (event.target.id) {
+      this.swap(event.dataTransfer.getData("text"), event.target.id)
+      event.dataTransfer.clearData()
+    }
+  }
+  swap = (targetId, id) => {
+    let updatedArr = [...this.state.selectedPositions];
+    const temp = updatedArr[targetId];
+    updatedArr[targetId] = updatedArr[id];
+    updatedArr[id] = temp;
+    this.setState({
+      selectedPositions: updatedArr
+    });
   }
   render(){
     let openPosition = (
@@ -127,7 +145,8 @@ class OpenPosition extends Component {
     openPosition = this.state.step === 1 ? (
       <SortPositions 
         selected={this.state.selectedPositions}
-        dragStart={this.dragStart}/>
+        dragStart={this.dragStart}
+        drop={this.drop}/>
     ) : openPosition
     openPosition = this.state.step === 2 ? <SubmitPositions /> : openPosition
 

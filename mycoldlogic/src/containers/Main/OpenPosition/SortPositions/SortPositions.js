@@ -10,8 +10,13 @@ const SortPositions = ( props ) => {
         id={index}
         key={item.id}
         onDragStart={props.dragStart}
+        onDragOver={event => event.preventDefault()}
+        onDragEnd={props.dragEnd}
+        onDrop={props.drop}
         draggable>
-        {item.position}
+
+          {item.position}
+
       </li>
     )
   })
