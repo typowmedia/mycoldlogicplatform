@@ -10,8 +10,7 @@ const RequestPassword = props => {
           props.requestSent
           ? (
               <div>
-                <p>Thank you for using your ColdLogic employee portal.</p>
-                <p>Your manager will get in contact with a password soon!</p>
+                <p>Thank you for using your ColdLogic employee portal. Your manager will get in contact with a password soon!</p>
               </div>
             )
           : (

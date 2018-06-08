@@ -7,9 +7,9 @@ const SortPositions = ( props ) => {
   const positions = props.selected.map((item, index) => {
     return (
       <li
+        id={index}
         key={item.id}
-        onDrag={props.dragStart}
-        onDragExit{}
+        onDragStart={props.dragStart}
         draggable>
         {item.position}
       </li>
@@ -22,4 +22,7 @@ const SortPositions = ( props ) => {
   );
 };
 
+
 export default SortPositions;
+
+

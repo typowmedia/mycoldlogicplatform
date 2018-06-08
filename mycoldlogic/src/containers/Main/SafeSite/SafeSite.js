@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './SafeSite.css';
-import TempPhoto from '../../../assets/tempwarehousephoto.jpg';
 import Subtitle from '../../../components/UI/Subtitle/Subtitle';
 import SafeSiteForm from './SafeSiteForm/SafeSiteForm';
 import RequestSuccess from '../../../components/Requests/RequestSuccess/RequestSuccess';
@@ -74,7 +73,7 @@ class SafeSite extends Component {
   render(){
     let safeSite = (
       <div className="initial-message">
-        <p>It is our responsibilty to report any concern about safety, this helps us to keep our facilities safe and our work free of concerns</p>
+        <p>It is our responsibilty to report any concern about safety, this helps us to keep our facilities safe and our work free of concerns.</p>
         <button
           className='mainBtn'
           onClick={() => this.setState({startReport: true})}
@@ -82,7 +81,7 @@ class SafeSite extends Component {
           Start my Report
         </button>
       </div>
-    )
+    );
     if (this.state.startReport){
       safeSite = (
         <SafeSiteForm
@@ -107,19 +106,14 @@ class SafeSite extends Component {
           />
       )
     }
-    return(
-      <div className='SafeSite'>
-        <img src={TempPhoto} alt=""/>
-        <div>
-          <Subtitle
-            title='Safe Site Report'
-            icon='safe-site-report'
-            height='70px'
-            />
-          {safeSite}
-        </div>
-      </div>
-    );
+      return <div className='SafeSite'>
+              <Subtitle
+                  title='Safe Site Report'
+                  icon='safe-site-report'
+                  height='70px'
+              />
+              {safeSite}
+      </div>;
   }
 }
 

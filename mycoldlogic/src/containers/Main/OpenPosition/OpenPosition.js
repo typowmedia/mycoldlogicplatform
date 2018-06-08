@@ -110,7 +110,12 @@ class OpenPosition extends Component {
 
   clearError = () => {
     this.setState({error: ''});
-  };
+  }
+
+  dragStart = (event) => {
+    console.log(event);
+    
+  }
   render(){
     let openPosition = (
       <SelectPositions
@@ -119,7 +124,11 @@ class OpenPosition extends Component {
         selected={this.state.selectedPositions}
         />
     )
-    openPosition = this.state.step === 1 ? <SortPositions selected={this.state.selectedPositions}/> : openPosition
+    openPosition = this.state.step === 1 ? (
+      <SortPositions 
+        selected={this.state.selectedPositions}
+        dragStart={this.dragStart}/>
+    ) : openPosition
     openPosition = this.state.step === 2 ? <SubmitPositions /> : openPosition
 
 

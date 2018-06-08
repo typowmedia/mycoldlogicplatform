@@ -1,22 +1,33 @@
 .SafeSite{
-  display: grid;
-  grid-template-columns: 350px auto;
   height: 90vh;
   text-align: center;
 }
 .initial-message{
+  font-size: x-large;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
 }
-.initial-message p {
 
+.initial-message p {
+    width: 75%;
 }
+
+.initial-message button {
+    width: 50%;
+}
+
 .SafeSite img{
   width: 100%;
   height: 100%;
+}
+
+.SafeSiteForm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
 /* smart watches (just in case) */
