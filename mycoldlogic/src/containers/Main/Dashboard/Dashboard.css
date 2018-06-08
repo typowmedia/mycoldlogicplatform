@@ -6,12 +6,39 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+  transition: all ease-in-out 0.3s;
 }
 .Dashboard-nav-container {
   width: 75%
 }
 .Dashboard-form-container {
   width: 25%
+}
+.announcements {
+  width: 100%;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  height: 20vh;
+  background: #1395BA;
+}
+.announcements-height-zero{
+  height: 0;
+}
+.padding-top{
+  padding-top: 10vh;
+}
+#toggleAnnouncements{
+  width: 30px;
+  position: absolute;
+  bottom: -5px;
+  left: calc(50% - 15px);
+  z-index: 50px;
+  background: #1f1f1f;
+  color: #fff;
+  border: none;
+}
+#toggleAnnouncements:hover{
+  cursor: pointer;
 }
 /* smart watches (just in case) */
 @media screen and (max-width: 330px) {

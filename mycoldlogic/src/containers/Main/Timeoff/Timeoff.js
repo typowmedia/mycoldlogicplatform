@@ -64,7 +64,13 @@ class Timeoff extends Component {
       <div className='Timeoff'>
       <div className='Timeoff-subtitle'>
         <Subtitle height='70px' icon={'timeoff'} title='Time Off Request' />
-        <div className='Timeoff-error'>{this.state.error ? <ErrorMessage message={this.state.error.message} clicked={this.closeError}/> : null}</div>
+        <div className='Timeoff-error'>
+        {
+          this.state.error
+          ? <ErrorMessage message={this.state.error.message} clicked={this.closeError}/>
+          : null
+        }
+        </div>
       </div>
         {timeOff}
       </div>

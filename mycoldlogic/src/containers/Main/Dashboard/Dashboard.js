@@ -13,6 +13,7 @@ class Dashboard extends Component {
     this.state = {
       announcements: {},
       showEvents: false,
+      showAnnouncements: true
     };
   }
 
@@ -26,7 +27,18 @@ class Dashboard extends Component {
   toggleEvents = () => {
     this.setState(prevState => ({showEvents: !prevState.showEvents}));
   }
+  toggleAnnouncements = () => {
+    this.setState( prevState => ({showAnnouncements: !prevState.showAnnouncements}));
+  };
   render(){
+      let announcementClasses = ['announcements'];
+      let announcements = <Announcements showEvents={this.toggleEvents}/>;
+
+      if (!this.state.showAnnouncements) {
+        announcements = null;
+        announcementClasses = ['announcements', 'announcements-height-zero'];
+      }
+
       return(
         <Wrapper>
 
@@ -34,13 +46,21 @@ class Dashboard extends Component {
 
           <div className='Dashboard'>
 
-            <div className='announcements'>
+            <div className={announcementClasses.join(' ')}>
 
-              <Announcements showEvents={this.toggleEvents}/>
+              {announcements}
+              <button onClick={this.toggleAnnouncements} id='toggleAnnouncements'>
+                <i style={{
+                  transform: !this.state.showAnnouncements
+                  ? 'rotateZ(180deg)'
+                  : null
+                }}
+                  className="fas fa-chevron-up"/>
+              </button>
 
             </div>
 
-          <div className='Dashboard-flex-container'>
+          <div className={`Dashboard-flex-container ${!this.state.showAnnouncements ? 'padding-top' : null }`}>
 
             <div className='Dashboard-nav-container'>
 

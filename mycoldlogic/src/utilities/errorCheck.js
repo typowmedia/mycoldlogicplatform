@@ -57,6 +57,13 @@ const errorCheck = (error) => {
       };
       break;
 
+      case 'selectedPositions':
+      err = {
+        message: 'You must select at least one position and no more than five. Please double check your selections',
+        type: error
+      };
+      break;
+
       default: err = false;
     }
     return err;

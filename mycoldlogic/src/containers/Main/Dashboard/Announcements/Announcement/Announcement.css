@@ -17,6 +17,7 @@
   border: none;
   margin-right: 5px;
   color: #ffffff;
+  z-index: 50;
 }
 .Announcement-padding-margin{
   padding: 5px;
