@@ -1,6 +1,4 @@
 .SafeSite{
-  display: grid;
-  grid-template-columns: 350px auto;
   height: 90vh;
   text-align: center;
 }

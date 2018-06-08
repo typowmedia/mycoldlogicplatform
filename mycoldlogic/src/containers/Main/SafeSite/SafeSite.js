@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './SafeSite.css';
-import TempPhoto from '../../../assets/tempwarehousephoto.jpg';
 import Subtitle from '../../../components/UI/Subtitle/Subtitle';
 import SafeSiteForm from './SafeSiteForm/SafeSiteForm';
 import RequestSuccess from '../../../components/Requests/RequestSuccess/RequestSuccess';
@@ -107,19 +106,16 @@ class SafeSite extends Component {
           />
       )
     }
-    return(
-      <div className='SafeSite'>
-        <img src={TempPhoto} alt=""/>
-        <div>
-          <Subtitle
-            title='Safe Site Report'
-            icon='safe-site-report'
-            height='70px'
-            />
-          {safeSite}
-        </div>
-      </div>
-    );
+      return <div className='SafeSite'>
+          <div>
+              <Subtitle
+                  title='Safe Site Report'
+                  icon='safe-site-report'
+                  height='70px'
+              />
+              {safeSite}
+          </div>
+      </div>;
   }
 }
 
