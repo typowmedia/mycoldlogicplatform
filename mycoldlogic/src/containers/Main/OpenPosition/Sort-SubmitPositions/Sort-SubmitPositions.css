@@ -1,0 +1,42 @@
+.SortPositions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-block-end: 10px auto;
+}
+.SortPositions li{
+  list-style: none;
+  box-sizing: border-box;
+  min-width: 300px;
+  padding: 15px;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+.sortable{
+  background-color: #ccc;
+  color: #000;
+}
+.unsortable{
+  background-color: #1f1f1f;
+  color: white;
+}
+.lastStep {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 16px;
+}
+.SortPositions li:hover{
+  cursor: grab;
+}
+.SortPositions li:active{
+  cursor: grabbing;
+}
+
+.SubmitPositions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-block-end: 10px auto;
+}

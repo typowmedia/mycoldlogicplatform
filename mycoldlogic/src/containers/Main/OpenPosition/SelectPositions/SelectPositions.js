@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import './SelectPositions.css';
 
 const SelectPositions = ( props ) => {
   const positions = props.positions.map((checkbox, index) => {
@@ -21,11 +22,11 @@ const SelectPositions = ( props ) => {
     )
   });
   return (
-    <form>
-      <div>
+      <div className='SelectPositions'>
+
         {positions}
+
       </div>
-    </form>
   );
 };
 

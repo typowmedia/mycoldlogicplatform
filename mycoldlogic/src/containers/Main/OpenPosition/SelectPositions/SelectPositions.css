@@ -1,0 +1,25 @@
+.SelectPositions{
+
+}
+.SelectPositions div {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 1.3rem;
+}
+.SelectPositions label {
+    padding: 8px;
+    text-align: center;
+    flex: stretch;
+    height: 100%;
+    width: 100%;
+}
+.SelectPositions label:hover {
+    cursor: pointer;
+    color: #fff;
+    background: #1f1f1f;
+}
+.SelectPositions input[type='checkbox']{
+    margin: 0 10px;
+    font-size: 7em;
+}

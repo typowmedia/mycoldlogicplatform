@@ -63,7 +63,7 @@ const errorCheck = (error) => {
         type: error
       };
       break;
-
+      
       default: err = false;
     }
     return err;
