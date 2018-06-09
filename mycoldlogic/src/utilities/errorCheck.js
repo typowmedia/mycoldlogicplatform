@@ -70,19 +70,20 @@ const errorCheck = (error) => {
 };
 
 const dateCheck = (fromDate, toDate) => {
-  let fDate = new Date(fromDate).getTime();
-  fDate = new Date(fDate).getTime() + new Date(fDate).getTimezoneOffset();
-  const tDate = new Date(toDate).getTime();
-  const todayDate = new Date().getTime();
+  console.log(fromDate, toDate);
+  // let fDate = new Date(fromDate).getTime();
+  // fDate = new Date(fDate).getTime() + new Date(fDate).getTimezoneOffset();
+  // const tDate = new Date(toDate).getTime();
+  // const todayDate = new Date().getTime();
 
-  console.log('[FROMDATE]', new Date(fromDate).getTime());
-  console.log('[FROMDATE + TIMEZONE]', fDate);
-  console.log('[FROMDATE + TIMEZONE LOGGED]', new Date(fDate));
-  console.log('[TODATE]', tDate);
-  console.log('[TODAYDATE]', todayDate);
+  // console.log('[FROMDATE]', new Date(fromDate).getTime());
+  // console.log('[FROMDATE + TIMEZONE]', fDate);
+  // console.log('[FROMDATE + TIMEZONE LOGGED]', new Date(fDate));
+  // console.log('[TODATE]', tDate);
+  // console.log('[TODAYDATE]', todayDate);
 
-  var offset = new Date().getTimezoneOffset();
-  console.log(offset);
+  // var offset = new Date().getTimezoneOffset();
+  // console.log(offset);
     return {
       message: 'Wrong date',
       type: 'fromDate'

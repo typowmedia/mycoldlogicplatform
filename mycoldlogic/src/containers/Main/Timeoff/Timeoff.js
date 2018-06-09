@@ -16,6 +16,7 @@ class Timeoff extends Component {
     super(props);
 
     this.state = {
+      requestDate: '',
       reason: '',
       message: '',
       toDate: '',
@@ -29,10 +30,17 @@ class Timeoff extends Component {
 
   // LIFECYCLES
   componentDidMount(){
+    let todaysDate = new Date();
+    todaysDate.setHours(0,0,0,0);
     axios.get('/TimeOffReasons')
       .then(results => {
-        this.setState({timeOffReasons: results.data, loading: false});
+        this.setState({
+          timeOffReasons: results.data, 
+          loading: false,
+          requestDate: todaysDate
+        });
       });
+    
   }
 
   render(){
@@ -92,10 +100,16 @@ class Timeoff extends Component {
     this.setState({reason: event.target.value, error: ''});
   };
   updateFromDate = (event) => {
-    this.setState({fromDate: event.target.value, error: ''});
+    let chosenDate = event.target.value;
+    chosenDate = chosenDate.split('-');
+    const date = new Date(chosenDate.join(','))
+    this.setState({fromDate: date, error: ''});
   };
   updateToDate = (event) => {
-    this.setState({toDate: event.target.value, error: ''});
+    let chosenDate = event.target.value;
+    chosenDate = chosenDate.split('-');
+    const date = new Date(chosenDate.join(','))
+    this.setState({toDate: date, error: ''});
   };
   updateMessage = (event) => {
     this.setState({message: event.target.value, error: ''});
@@ -106,24 +120,25 @@ class Timeoff extends Component {
   submitTimeoffRequest = (event) => {
     event.preventDefault();
     let error;
-    if (this.state.fromDate === '') {
-      error = errorCheck('fromDate')
-    } else if (this.state.toDate === '') {
-      error = errorCheck('toDate')
-    } else if (this.state.reason === '') {
-      error = errorCheck('reason')
-    } else if (this.state.message === '') {
-      error = errorCheck('message')
-    } else if (this.state.fromDate || this.state.toDate) {
-      error = dateCheck(this.state.fromDate, this.state.toDate);
-    };
-    if (error) {
-      this.setState({error: error});
-    } else {
-      // SEND MESSAGE
-      console.log(this.state.reason, this.state.toDate, this.state.fromDate, this.state.message);
-      this.setState(prevState => ({requestSubmitted: !prevState.requestSubmitted, error: ''}))
-    }
+    console.log(this.state.requestDate === this.state.fromDate);
+    // if (this.state.fromDate === '') {
+    //   error = errorCheck('fromDate')
+    // } else if (this.state.toDate === '') {
+    //   error = errorCheck('toDate')
+    // } else if (this.state.reason === '') {
+    //   error = errorCheck('reason')
+    // } else if (this.state.message === '') {
+    //   error = errorCheck('message')
+    // } else if (this.state.fromDate || this.state.toDate) {
+    //   error = dateCheck(this.state.fromDate, this.state.toDate);
+    // };
+    // if (error) {
+    //   this.setState({error: error});
+    // } else {
+    //   // SEND MESSAGE
+    //   console.log(this.state.reason, this.state.toDate, this.state.fromDate, this.state.message);
+    //   this.setState(prevState => ({requestSubmitted: !prevState.requestSubmitted, error: ''}))
+    // }
   };
 }
 

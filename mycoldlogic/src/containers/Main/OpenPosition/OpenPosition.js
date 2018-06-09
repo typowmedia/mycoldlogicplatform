@@ -65,7 +65,8 @@ class OpenPosition extends Component {
           position: 'Amazing opportunity to advance'
         }
       ],
-      selectedPositions: []
+      selectedPositions: [],
+      nativeBox: null
     }
   }
   checkboxHandler = (event) => {
@@ -118,14 +119,14 @@ class OpenPosition extends Component {
   }
 
   dragStart = (event) => {
-    event.dataTransfer.setData("text", event.target.id)
+    event.nativeEvent.dataTransfer.setData("text", event.target.id)
     this.setState({targetbox: true})
   }
 
   drop = (event) => {
+    event.preventDefault();
     if (event.target.id) {
-      this.swap(event.dataTransfer.getData("text"), event.target.id)
-      event.dataTransfer.clearData()
+      this.swap(event.nativeEvent.dataTransfer.getData("text"), event.target.id);
     }
   }
 
