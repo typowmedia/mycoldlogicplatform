@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+
+import './OpenPosition.css';
 import _ from 'lodash';
+
 import { errorCheck } from '../../../utilities/errorCheck';
 import ErrorMessage from '../../../components/Requests/ErrorMessage/ErrorMessage';
-import './OpenPosition.css';
 import Subtitle from '../../../components/UI/Subtitle/Subtitle';
 import BackToDashboard from '../../../components/UI/BackToDashboard/BackToDashboard';
 import SelectPositions from './SelectPositions/SelectPositions';
-import SortPositions from './SortPositions/SortPositions';
-import SubmitPositions from './SubmitPositions/SubmitPositions';
+import SortSubmitPositions from './Sort-SubmitPositions/Sort-SubmitPositions';
 
 const stepList = [
   {
@@ -115,16 +116,19 @@ class OpenPosition extends Component {
   dragEnd = (event) => {
     this.setState({targetbox: null})
   }
+
   dragStart = (event) => {
     event.dataTransfer.setData("text", event.target.id)
     this.setState({targetbox: true})
   }
+
   drop = (event) => {
     if (event.target.id) {
       this.swap(event.dataTransfer.getData("text"), event.target.id)
       event.dataTransfer.clearData()
     }
   }
+
   swap = (targetId, id) => {
     let updatedArr = [...this.state.selectedPositions];
     const temp = updatedArr[targetId];
@@ -134,6 +138,7 @@ class OpenPosition extends Component {
       selectedPositions: updatedArr
     });
   }
+
   render(){
     let openPosition = (
       <SelectPositions
@@ -142,17 +147,16 @@ class OpenPosition extends Component {
         selected={this.state.selectedPositions}
         />
     )
-    openPosition = this.state.step === 1 ? (
-      <SortPositions 
+    openPosition = this.state.step !== 0 ? (
+      <SortSubmitPositions 
         selected={this.state.selectedPositions}
         dragStart={this.dragStart}
-        drop={this.drop}/>
+        drop={this.drop}
+        step={this.state.step}/>
     ) : openPosition
-    openPosition = this.state.step === 2 ? <SubmitPositions /> : openPosition
-
 
     const backButton = this.state.step > 0
-    ? <button onClick={this.lastStep} className='mainBtn'>Go Back</button>
+    ? <button onClick={this.lastStep} className='mainBtn'>{this.state.step === 1 ? 'Select Again' : 'Go Back'}</button>
     : <BackToDashboard />
 
     return(
@@ -171,7 +175,11 @@ class OpenPosition extends Component {
           <h1>Step: {stepList[this.state.step].step}</h1>
           <p>{stepList[this.state.step].instructions}</p>
         </div>
-        {openPosition}
+        <div className='OpenPosition-steps'>
+
+          {openPosition}
+
+        </div>
         <div>
           {backButton}
           <button
