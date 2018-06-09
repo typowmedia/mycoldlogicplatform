@@ -32,23 +32,32 @@
 }
 /* phones less than 600px wide*/
 @media screen and (min-device-width: 330px)and (max-width: 600px){
-    .Header #Logo {
-        height: 60%;
-    }
+  .Header {
+    width: 100%;
+  }
+  .Header #Logo {
+      height: 60%;
+  }
 }
 /* phones bigger than 600px & less than 768px wide*/
 @media screen and (min-device-width: 600px)and (max-width: 768px){
-
+  .Header {
+    width: 100%;
+  }
 }
 
 /* tablets less than 900px wide*/
 @media screen and (min-device-width: 768px)and (max-width: 900px){
-
+  .Header {
+    width: 100%;
+  }
 }
 
 /* tablets / Laptops more than 900px  and less than 1200px wide*/
 @media screen and (min-device-width: 900px)and (max-width: 1200px){
-
+  .Header {
+    width: 100%;
+  }
 }
 
 /* Laptops and Monitors more than 1200px  and less than 1800px wide*/

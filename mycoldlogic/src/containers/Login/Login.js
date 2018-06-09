@@ -24,7 +24,6 @@ class Login extends Component {
     requestPassword = (event) => {
       event.preventDefault();
       // send request off for user Password
-      console.log('Password Request Sent');
       this.setState({
         passwordRequestSent: true
       }, () => {
