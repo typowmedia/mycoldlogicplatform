@@ -7,7 +7,7 @@ import Subtitle from '../../../components/UI/Subtitle/Subtitle';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import ErrorMessage from '../../../components/Requests/ErrorMessage/ErrorMessage';
 
-import { errorCheck, dateCheck } from '../../../utilities/errorCheck';
+import { errorCheck } from '../../../utilities/errorCheck';
 import axios from 'axios';
 
 
@@ -120,25 +120,24 @@ class Timeoff extends Component {
   submitTimeoffRequest = (event) => {
     event.preventDefault();
     let error;
-    console.log(this.state.requestDate === this.state.fromDate);
-    // if (this.state.fromDate === '') {
-    //   error = errorCheck('fromDate')
-    // } else if (this.state.toDate === '') {
-    //   error = errorCheck('toDate')
-    // } else if (this.state.reason === '') {
-    //   error = errorCheck('reason')
-    // } else if (this.state.message === '') {
-    //   error = errorCheck('message')
-    // } else if (this.state.fromDate || this.state.toDate) {
-    //   error = dateCheck(this.state.fromDate, this.state.toDate);
-    // };
-    // if (error) {
-    //   this.setState({error: error});
-    // } else {
-    //   // SEND MESSAGE
-    //   console.log(this.state.reason, this.state.toDate, this.state.fromDate, this.state.message);
-    //   this.setState(prevState => ({requestSubmitted: !prevState.requestSubmitted, error: ''}))
-    // }
+    if (this.state.fromDate === '') {
+      error = errorCheck('fromDate')
+    } else if (this.state.toDate === '') {
+      error = errorCheck('toDate')
+    } else if (this.state.reason === '') {
+      error = errorCheck('reason')
+    } else if (this.state.message === '') {
+      error = errorCheck('message')
+    } else if (Date.parse(this.state.requestDate) > Date.parse(this.state.fromDate)) {
+      error = errorCheck('pastDate')
+    };
+    if (error) {
+      this.setState({error: error});
+    } else {
+      // SEND MESSAGE
+      console.log(this.state.reason, this.state.toDate, this.state.fromDate, this.state.message);
+      this.setState(prevState => ({requestSubmitted: !prevState.requestSubmitted, error: ''}))
+    }
   };
 }
 
