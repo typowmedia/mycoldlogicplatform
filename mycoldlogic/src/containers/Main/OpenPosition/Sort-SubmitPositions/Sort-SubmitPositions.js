@@ -5,12 +5,11 @@ import './Sort-SubmitPositions.css';
 const SortSubmitPositions = ( props ) => {
   const positions = props.selected.map((item, index) => {
     return (
-      <div className='SortPositions'>
+      <div className='SortPositions' key={item.id}>
         {'#' + ( index + 1)} Choice:
         <li
           className={props.step === 1 ? 'sortable' : 'unsortable'}
           id={index}
-          key={item.id}
           onDragStart={props.dragStart}
           onDragOver={event => event.preventDefault()}
           onDragEnd={props.dragEnd}
