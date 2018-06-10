@@ -4,6 +4,10 @@
   flex-flow: column;
   height: 100%;
 }
+.BestSiteReport-error{
+  width: 70%;
+  margin: 0 auto;
+}
 .Best-Site-initial-message{
   text-align: center;
   height: 100%;

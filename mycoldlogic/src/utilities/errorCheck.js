@@ -62,13 +62,40 @@ const errorCheck = (error) => {
         message: 'You must select at least one position and no more than five. Please double check your selections',
         type: error
       };
-      break;
-      
+      break;     
 
       case 'pastDate':
       err = {
         message: 'The date you selected has already passed',
         type: 'fromDate'
+      };
+      break;
+
+      case 'mySuggestion':
+      err = {
+        message: 'You must enter a suggestion before submitting.',
+        type: error
+      };
+      break;
+
+      case 'suggestionImprovement':
+      err = {
+        message: 'Please provide more information on what your suggestion will improve.',
+        type: error
+      };
+      break;
+
+      case 'reasons':
+      err = {
+        message: 'You must select atleast one checkbox to continue.',
+        type: error
+      };
+      break;
+
+      case 'other':
+      err = {
+        message: 'You must provide a reason when selecting "other"',
+        type: error
       };
       break;
 

@@ -17,11 +17,15 @@ const checkboxes = [
 
 
 const BestSiteForm = ( props ) => {
+  
+  const errorType = props.error.type;
+  
   const checkbox = checkboxes.map((checkbox, index) => {
     let other;
     if (index === checkboxes.length - 1 && props.other) {
       other = (
         <input
+          style={{borderColor: errorType === 'other' ? 'red' : null}}
           type='text'
           onChange={props.otherSuggestionChanged}
           value={props.otherSuggestion}/>);
@@ -40,6 +44,7 @@ const BestSiteForm = ( props ) => {
           <div>
             <p>My suggestion is:</p>
             <textarea
+              style={{borderColor: errorType === 'mySuggestion' ? 'red' : null}}
               rows='8'
               value={props.mySuggestionValue}
               onChange={props.mySuggestion}
@@ -49,6 +54,7 @@ const BestSiteForm = ( props ) => {
           <div>
             <p>This will make ColdLogic the best site by:</p>
             <textarea
+              style={{borderColor: errorType === 'suggestionImprovement' ? 'red' : null}}
               rows='8'
               value={props.mySuggestionImprovementValue}
               onChange={props.mySuggestionImprovement}/>
