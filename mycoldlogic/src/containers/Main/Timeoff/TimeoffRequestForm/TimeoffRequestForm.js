@@ -1,5 +1,5 @@
-import React from 'react';
-import './TimeoffRequestForm.css';
+import React from 'react'
+import './TimeoffRequestForm.css'
 
 const TimeoffRequestForm = ( props ) => {
   let timeoffReasons = props.timeoffReasons.map(reason => {
@@ -46,6 +46,7 @@ const TimeoffRequestForm = ( props ) => {
             style={errType === 'message' ? {border: '1px solid red'} : null}
             />
         </div>
+  
         <button className="mainBtn" onClick={props.submitTimeoffRequest}>Submit Time off</button>
       </form>
     </div>

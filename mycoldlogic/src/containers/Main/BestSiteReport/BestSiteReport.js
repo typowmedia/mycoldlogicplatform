@@ -3,8 +3,9 @@ import _ from 'lodash';
 
 import Subtitle from '../../../components/UI/Subtitle/Subtitle';
 import RequestSuccess from '../../../components/Requests/RequestSuccess/RequestSuccess';
+import ErrorMessage from '../../../components/Requests/ErrorMessage/ErrorMessage';
 import BestSiteForm from './BestSiteForm/BestSiteForm';
-// import BackToDashboard from '../../../components/UI/BackToDashboard/BackToDashboard';
+import { errorCheck } from '../../../utilities/errorCheck';
 
 import './BestSiteReport.css';
 
@@ -20,13 +21,14 @@ class BestSiteReport extends Component {
       checkboxReasons: [],
       otherSuggestion: '',
       otherSuggestionBoolean: false,
+      error: ''
     };
   }
   suggestionHandler = (event) => {
-    this.setState({mySuggestion: event.target.value});
+    this.setState({mySuggestion: event.target.value, error: ''});
   };
   suggestionImprovementHandler = (event) => {
-    this.setState({suggestionImprovement: event.target.value});
+    this.setState({suggestionImprovement: event.target.value, error: ''});
   };
   checkboxHandler = (event) => {
     let updatedArr;
@@ -46,46 +48,76 @@ class BestSiteReport extends Component {
     this.setState({
       checkboxReasons: updatedArr,
       otherSuggestionBoolean: otherVal,
-      otherSuggestion: otherVal ? this.state.otherSuggestion : ''
+      otherSuggestion: otherVal ? this.state.otherSuggestion : '',
+      error: ''
     });
   };
   otherReasonFieldHandler = (event) => {
-    this.setState({otherSuggestion: event.target.value});
+    this.setState({otherSuggestion: event.target.value, error: ''});
   };
   submitReport = () => {
-    // ERROR REPORTS STILL TO DO
-    let updatedArr = [...this.state.checkboxReasons]
-    let otherIndex = _.indexOf(updatedArr, 'Other:');
-    if ( otherIndex !== -1) {
-      const arr = updatedArr;
-      const other = arr[otherIndex] + " " + this.state.otherSuggestion;
-      updatedArr = arr.map((item, index) => {
-        if (index === otherIndex) {
-          return other;
-        }
-        return item;
+    let error;
+    if (this.state.mySuggestion === '') {
+      error = errorCheck('mySuggestion')
+    } else if (this.state.suggestionImprovement === ''){
+      error = errorCheck('suggestionImprovement')
+    } else if (this.state.checkboxReasons.length < 1) {
+      error = errorCheck('reasons')
+    }
+    if (this.state.otherSuggestionBoolean) {
+      if (this.state.otherSuggestion === '') {
+        error = errorCheck('other')
+      }
+    }
+    if (error) {
+      this.setState({
+        error: error
+      });
+    } else {
+
+      let updatedArr = [...this.state.checkboxReasons]
+
+      let otherIndex = _.indexOf(updatedArr, 'Other:');
+
+      if ( otherIndex !== -1) {
+        const arr = updatedArr;
+        const other = arr[otherIndex] + " " + this.state.otherSuggestion;
+        updatedArr = arr.map((item, index) => {
+          if (index === otherIndex) {
+            return other;
+          }
+          return item;
+        });
+      }
+
+      let report = {
+        suggestion: this.state.mySuggestion,
+        improvementVal: this.state.suggestionImprovement,
+        reasons: updatedArr
+      }
+
+      console.log(report); // THIS WILL BE REPLACE WITH POST METHOD TO API
+      this.setState({
+        reportSubmitted: true,
+        mySuggestion: '',
+        suggestionImprovement: '',
+        checkboxReasons: [],
+        otherSuggestion: '',
+        otherSuggestionBoolean: false,
       });
     }
-    let report = {
-      suggestion: this.state.mySuggestion,
-      improvementVal: this.state.suggestionImprovement,
-      reasons: updatedArr
-    }
-    console.log(report); // THIS WILL BE REPLACE WITH POST METHOD TO API
-    this.setState({
-      reportSubmitted: true,
-      mySuggestion: '',
-      suggestionImprovement: '',
-      checkboxReasons: [],
-      otherSuggestion: '',
-      otherSuggestionBoolean: false,
-    });
+
   };
   submitNewSiteReport = () => {
     this.setState({
       reportSubmitted: false
     });
   };
+  clearError = () => {
+    this.setState({
+      error: ''
+    });
+  }
   render(){
     let bestSite = (
       <div className="Best-Site-initial-message">
@@ -102,6 +134,7 @@ class BestSiteReport extends Component {
     if (this.state.startSuggestion) {
       bestSite = (
         <BestSiteForm
+          error={this.state.error}
           clicked={this.submitReport}
           changed={(event) => this.checkboxHandler(event)}
           otherSuggestionChanged={this.otherReasonFieldHandler}
@@ -124,7 +157,10 @@ class BestSiteReport extends Component {
     }
     return(
       <div className='BestSiteReport'>
-        <Subtitle icon='best-site-report' height='70px' title='Best Site Report'/>
+        <div className='BestSiteReport-error'>
+          <Subtitle icon='best-site-report' height='70px' title='Best Site Report'/>
+          {this.state.error !== '' ? <ErrorMessage message={this.state.error.message} clicked={this.clearError}/> : null}
+        </div>
         {bestSite}
       </div>
     );
