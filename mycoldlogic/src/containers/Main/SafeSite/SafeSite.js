@@ -3,6 +3,7 @@ import './SafeSite.css';
 import Subtitle from '../../../components/UI/Subtitle/Subtitle';
 import SafeSiteForm from './SafeSiteForm/SafeSiteForm';
 import RequestSuccess from '../../../components/Requests/RequestSuccess/RequestSuccess';
+import ErrorMessage from '../../../components/Requests/ErrorMessage/ErrorMessage';
 import { errorCheck } from '../../../utilities/errorCheck';
 
 class SafeSite extends Component {
@@ -50,8 +51,13 @@ class SafeSite extends Component {
     if (error) {
       this.setState({error: error});
     } else {
+      const report = {
+        incidentDate: this.state.incidentDate,
+        incidentLocation: this.state.incidentLocation,
+        message: this.state.message
+      }
       // SEND MESSAGE
-      console.log(this.state.incidentDate, this.state.incidentLocation, this.state.message);
+      console.log(report);
       this.setState(prevState => ({
         formSubmitted: !prevState.formSubmitted,
         error: ''
@@ -107,11 +113,14 @@ class SafeSite extends Component {
       )
     }
       return <div className='SafeSite'>
-              <Subtitle
-                  title='Safe Site Report'
-                  icon='safe-site-report'
-                  height='70px'
-              />
+                <div className='SafeSite-error'>
+                  <Subtitle
+                      title='Safe Site Report'
+                      icon='safe-site-report'
+                      height='70px'
+                  />
+                  {this.state.error !== '' ? <ErrorMessage message={this.state.error.message} clicked={this.clearError}/> : null}
+                </div>
               {safeSite}
       </div>;
   }
