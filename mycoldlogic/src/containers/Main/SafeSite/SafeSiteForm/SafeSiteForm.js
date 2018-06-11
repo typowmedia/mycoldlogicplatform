@@ -1,11 +1,9 @@
 import React from 'react';
 import BackToDashboard from '../../../../components/UI/BackToDashboard/BackToDashboard';
-import ErrorMessage from '../../../../components/Requests/ErrorMessage/ErrorMessage';
 
 const SafeSiteForm = ( props ) => {
   return (
     <div>
-      {props.errorMessage ? <ErrorMessage message={props.errorMessage.message} clicked={props.closeError}/> : null}
       <form className="SafeSiteForm">
         <div>
           When did it happen?

@@ -71,6 +71,13 @@ const errorCheck = (error) => {
       };
       break;
 
+      case 'pastToDate':
+      err = {
+        message: 'The date you selected has already passed',
+        type: 'toDate'
+      };
+      break;
+
       case 'mySuggestion':
       err = {
         message: 'You must enter a suggestion before submitting.',

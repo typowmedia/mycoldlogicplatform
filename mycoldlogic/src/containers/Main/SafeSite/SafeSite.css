@@ -2,6 +2,10 @@
   height: 90vh;
   text-align: center;
 }
+.SafeSite-error {
+  width: 70%;
+  margin: 0 auto;
+}
 .initial-message{
   font-size: x-large;
   display: flex;

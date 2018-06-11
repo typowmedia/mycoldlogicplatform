@@ -5,11 +5,11 @@ const TableRow = ( props ) => {
   return (
     <tr>
       <td>{wkEndDate.toDateString()}</td>
-      <td>{props.recognition.dlyIncTot}</td>
-      <td>{props.recognition.wklyIncTot}</td>
-      <td>{props.recognition.grssInc}</td>
-      <td>{props.recognition.bbsFactor}</td>
-      <td>{props.recognition.netInc}</td>
+      <td>{props.recognition.dlyIncTot.toFixed(2)}</td>
+      <td>{props.recognition.wklyIncTot.toFixed(2)}</td>
+      <td>{props.recognition.grssInc.toFixed(2)}</td>
+      <td>{props.recognition.bbsFactor.toFixed(2)}</td>
+      <td>{props.recognition.netInc.toFixed(2)}</td>
     </tr>
   );
 };
