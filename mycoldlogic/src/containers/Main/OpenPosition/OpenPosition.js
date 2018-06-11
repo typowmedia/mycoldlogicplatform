@@ -107,7 +107,14 @@ class OpenPosition extends Component {
   }
 
   submitBid = () => {
-    console.log('SUBMITTED');
+    const report = {
+      positions: [...this.state.selectedPositions]
+    }
+    console.log(report);
+    this.setState({
+      selectedPositions: [],
+      step: 0 
+    });
   }
 
   clearError = () => {
