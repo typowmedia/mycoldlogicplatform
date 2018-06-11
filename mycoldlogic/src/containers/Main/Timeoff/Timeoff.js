@@ -130,12 +130,20 @@ class Timeoff extends Component {
       error = errorCheck('message')
     } else if (Date.parse(this.state.requestDate) > Date.parse(this.state.fromDate)) {
       error = errorCheck('pastDate')
-    };
+    } else if (Date.parse(this.state.requestDate) > Date.parse(this.state.toDate)) {
+      error = errorCheck('pastToDate')
+    }
     if (error) {
       this.setState({error: error});
     } else {
+      const report = {
+        reason: this.state.reason,
+        startDate: this.state.fromDate,
+        endDate: this.state.toDate,
+        message: this.state.message
+      }
       // SEND MESSAGE
-      console.log(this.state.reason, this.state.toDate, this.state.fromDate, this.state.message);
+      console.log(report);
       this.setState(prevState => ({requestSubmitted: !prevState.requestSubmitted, error: ''}))
     }
   };
